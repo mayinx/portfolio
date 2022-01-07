@@ -1,0 +1,48 @@
+.header {
+  height: 100vh;
+  background-color: teal;
+  background-image: url(https://images.unsplash.com/photo-1593642634443-44adaa06623a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1325&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.headerOverlay {
+  position: absolute;
+  top: 25%;
+  right: 5%;
+  /* transform: translate(-60%, -30%); */
+  overflow: hidden;
+  /* background-color: rgb(0, 0, 0, 0.6); */
+
+  /* top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; */
+  /* width: 100%; */
+  /* height: 100%; */
+}
+
+.navbar {
+  background-color: rgb(0 0 0 / 30%);
+  padding: 1rem;
+}
+
+.section {
+  padding: 100px 0;
+}
+
+.sectionHead {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.sectionSubhead {
+  /* TODO: Different font  */
+  /* font-size: 2rem; */
+  font-weight: 400;
+  margin-bottom: 75px;
+  text-transform: none;
+}

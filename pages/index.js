@@ -6,6 +6,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
+import Badge from "react-bootstrap/Badge";
 
 import styles from "./../styles/Index.module.css";
 
@@ -56,24 +57,47 @@ export default function start() {
             <Row>
               <Col>
                 <Card bg="light" className="shadow-lg">
-                  <Card.Img
-                    variant="top"
-                    src="https://images.unsplash.com/photo-1593642634443-44adaa06623a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1325&q=80"
-                    className="shadow-lg  rounded"
-                  />
-                  <Card.Body className="w-75">
-                    <Card.Title>
-                      Edmeda {""}
-                      <span className="text-muted">Community App</span>
-                    </Card.Title>
-                    <Card.Text>
-                      Some quick example text to build on the card title and make up the bulk of the
-                      card's content.
-                    </Card.Text>
-                    <a href="#" className="btn btn-primary">
-                      Go somewhere
-                    </a>
-                  </Card.Body>
+                  <Row className="g-0">
+                    <Col lg={6}>
+                      <Card.Img
+                        variant="top"
+                        src="https://images.unsplash.com/photo-1593642634443-44adaa06623a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1325&q=80"
+                        className="shadow-lg img-fluid rounded-start"
+                      />
+                    </Col>
+                    <Col lg={6}>
+                      <Card.Body className="">
+                        <Card.Title>
+                          Edmeda {""}
+                          <span className="text-muted blockquote-footer">Community App</span>
+                        </Card.Title>
+                        <Card.Text>
+                          Some quick example text to build on the card title and make up the bulk of
+                          the card's content.
+                        </Card.Text>
+                        <Card.Text>
+                          <small className="text-muted">Last updated 3 mins ago</small>
+                        </Card.Text>
+                        {/* <a href="#" className="btn btn-primary">
+                          Go somewhere
+                        </a> */}
+                      </Card.Body>
+                      <Card.Footer className="text-muted">
+                        <Badge bg="secondary">MongoDB</Badge>{" "}
+                        <Badge bg="secondary">Express.js</Badge>{" "}
+                        <Badge bg="secondary">React.js</Badge> <Badge bg="secondary">Node.js</Badge>{" "}
+                      </Card.Footer>
+                      <Card.Footer className="text-muted">
+                        <Badge bg="dark">MongoDB</Badge> <Badge bg="dark">Express.js</Badge>{" "}
+                        <Badge bg="dark">React.js</Badge> <Badge bg="dark">Node.js</Badge>{" "}
+                      </Card.Footer>
+                      <Card.Footer className="text-muted">
+                        <Badge bg="dark">MERN-Stack:</Badge> <Badge bg="secondary">MongoDB</Badge>{" "}
+                        <Badge bg="secondary">Express.js</Badge>{" "}
+                        <Badge bg="secondary">React.js</Badge> <Badge bg="secondary">Node.js</Badge>{" "}
+                      </Card.Footer>
+                    </Col>
+                  </Row>
                 </Card>
               </Col>
             </Row>

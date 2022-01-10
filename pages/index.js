@@ -7,6 +7,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
 import Badge from "react-bootstrap/Badge";
+import ListGroup from "react-bootstrap/ListGroup";
 
 import styles from "./../styles/Index.module.css";
 
@@ -56,45 +57,101 @@ export default function start() {
             </Row>
             <Row>
               <Col>
-                <Card bg="light" className="shadow-lg">
+                <Card bg="light" className={`${styles.projectCard} shadow-lg h-100`}>
                   <Row className="g-0">
-                    <Col lg={6}>
+                    <Col lg={6} className="d-flex flex-column">
                       <Card.Img
+                        className={`${styles.cardImage}  img-fluid rounded-start`}
                         variant="top"
                         src="https://images.unsplash.com/photo-1593642634443-44adaa06623a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1325&q=80"
-                        className="shadow-lg img-fluid rounded-start"
                       />
                     </Col>
-                    <Col lg={6}>
-                      <Card.Body className="">
+                    <Col lg={6} className="d-flex flex-column justify-content-between">
+                      <Card.Body className={styles.cardBody}>
                         <Card.Title>
                           Edmeda {""}
-                          <span className="text-muted blockquote-footer">Community App</span>
+                          <span className="text-muted blockquote-footer">
+                            Easy remote communication & collaboration for Schools
+                          </span>
                         </Card.Title>
-                        <Card.Text>
-                          Some quick example text to build on the card title and make up the bulk of
-                          the card's content.
-                        </Card.Text>
-                        <Card.Text>
-                          <small className="text-muted">Last updated 3 mins ago</small>
+                        <Card.Text className="text-muted">
+                          Edmeda is a password protected MERN-Stack Web Application which enables
+                          Schools to communicate & collaborate easily and effectively via multiple
+                          Communities. To achieve that, Teachers, Students and Parents alike are
+                          equipped with real-time Group Chats to share information instantaneously
+                          and effortlessly. Using Edmeda, Teachers can create limitless Communities
+                          - and inside those communities a limitless number of user groups. Those
+                          Communities and their User Groups can be centered around any target
+                          audience or subject, thus enabling users to achieve a targeted
+                          communication and information exchange, even in times of Corona.
                         </Card.Text>
                         {/* <a href="#" className="btn btn-primary">
                           Go somewhere
                         </a> */}
+                        <Card.Text>
+                          <h6>Tech Stack</h6>
+
+                          <ListGroup as="ul">
+                            <ListGroup.Item
+                              as="li"
+                              className="d-flex justify-content-between align-items-start"
+                            >
+                              <div className="col-3">
+                                <Badge bg="light" text="dark">
+                                  Languages
+                                </Badge>
+                              </div>
+                              <div className="col-9 text-end">
+                                <Badge bg="secondary">JavaScript</Badge>{" "}
+                                <Badge bg="secondary">HTML5</Badge>{" "}
+                                <Badge bg="secondary">CSS3</Badge>
+                              </div>
+                            </ListGroup.Item>
+                            <ListGroup.Item
+                              as="li"
+                              className="d-flex justify-content-between align-items-start"
+                            >
+                              <div className="col-3">
+                                <Badge bg="light" text="dark">
+                                  Web Stack
+                                </Badge>{" "}
+                              </div>
+                              <div className="col-9 text-end">
+                                <Badge bg="secondary">MongoDB (Mongoose)</Badge>{" "}
+                                <Badge bg="secondary">Express.js</Badge>{" "}
+                                <Badge bg="secondary">React.js</Badge>{" "}
+                                <Badge bg="secondary">Node.js</Badge>{" "}
+                              </div>
+                            </ListGroup.Item>
+                            <ListGroup.Item
+                              as="li"
+                              className="d-flex justify-content-between align-items-start"
+                            >
+                              <div className="col-3">
+                                <Badge bg="light" text="dark">
+                                  More
+                                </Badge>
+                              </div>
+                              <div className="col-9 text-end">
+                                <Badge bg="secondary">Socket.IO</Badge>{" "}
+                                <Badge bg="secondary">JWT-Auth</Badge>{" "}
+                                <Badge bg="secondary">bcryptjs</Badge>{" "}
+                                <Badge bg="secondary">localStorage</Badge>{" "}
+                                <Badge bg="secondary">React Hook Form</Badge>{" "}
+                                <Badge bg="secondary">React Responsive</Badge>{" "}
+                                <Badge bg="secondary">Axios</Badge>{" "}
+                                <Badge bg="secondary">Gender Detection</Badge>{" "}
+                                <Badge bg="secondary">Faker</Badge>{" "}
+                                <Badge bg="secondary">Heroku</Badge>{" "}
+                              </div>
+                            </ListGroup.Item>
+                          </ListGroup>
+                        </Card.Text>
                       </Card.Body>
-                      <Card.Footer className="text-muted">
-                        <Badge bg="secondary">MongoDB</Badge>{" "}
-                        <Badge bg="secondary">Express.js</Badge>{" "}
-                        <Badge bg="secondary">React.js</Badge> <Badge bg="secondary">Node.js</Badge>{" "}
-                      </Card.Footer>
-                      <Card.Footer className="text-muted">
-                        <Badge bg="dark">MongoDB</Badge> <Badge bg="dark">Express.js</Badge>{" "}
-                        <Badge bg="dark">React.js</Badge> <Badge bg="dark">Node.js</Badge>{" "}
-                      </Card.Footer>
-                      <Card.Footer className="text-muted">
-                        <Badge bg="dark">MERN-Stack:</Badge> <Badge bg="secondary">MongoDB</Badge>{" "}
-                        <Badge bg="secondary">Express.js</Badge>{" "}
-                        <Badge bg="secondary">React.js</Badge> <Badge bg="secondary">Node.js</Badge>{" "}
+                      <Card.Footer className={styles.cardFooter}>
+                        <Card.Link href="#">Details</Card.Link>
+                        <Card.Link href="https://github.com/mayinx/edmeda">Github</Card.Link>
+                        <Card.Link href="https://edmeda.herokuapp.com/">Site</Card.Link>
                       </Card.Footer>
                     </Col>
                   </Row>

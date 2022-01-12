@@ -10,7 +10,8 @@ import ListGroup from "react-bootstrap/ListGroup";
 import { BsGithub } from "react-icons/bs";
 
 export default function hCard(props) {
-  const { head, subhead, description, techStack, imgUrl, siteUrl, repoUrl } = props;
+  const { name, subhead, description, techStack, imgUrl, siteUrl, repoUrl } = props;
+  console.log("hCardProps: ", props);
 
   return (
     <Card bg="light" className={`${styles.projectCard} shadow-lg h-100`}>
@@ -26,7 +27,7 @@ export default function hCard(props) {
         <Col xl={4} className="d-flex flex-column justify-content-between">
           <Card.Body className={styles.cardBody}>
             <Card.Title>
-              {head} {""}
+              {name} {""}
               <span className="text-muted blockquote-footer">{subhead}</span>
             </Card.Title>
             <Card.Text className="text-muted">{description}</Card.Text>
@@ -65,7 +66,7 @@ export default function hCard(props) {
               size="sm"
               className="rounded-3"
               variant="outline-secondary"
-              href={siteUrl}
+              href={repoUrl}
             >
               <BsGithub /> Code
             </Button>
@@ -75,7 +76,7 @@ export default function hCard(props) {
               size="sm"
               className="rounded-3"
               variant="outline-secondary"
-              href={repoUrl}
+              href={siteUrl}
             >
               <BsGithub /> App
             </Button>

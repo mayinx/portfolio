@@ -1,17 +1,23 @@
+import styles from "./../styles/Index.module.css";
+
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import NavDropdown from "react-bootstrap/NavDropdown";
 
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
+import Button from "react-bootstrap/Button";
 import Badge from "react-bootstrap/Badge";
 import ListGroup from "react-bootstrap/ListGroup";
 
-import styles from "./../styles/Index.module.css";
+import { BsGithub } from "react-icons/bs";
 
-export default function start() {
+import Image from "next/image";
+
+import HCard from "../components/index-page/ProjectCardH";
+
+export default function start(props) {
   return (
     <>
       <header className={styles.header}>
@@ -57,105 +63,34 @@ export default function start() {
             </Row>
             <Row>
               <Col>
-                <Card bg="light" className={`${styles.projectCard} shadow-lg h-100`}>
-                  <Row className="g-0">
-                    <Col lg={6} className="d-flex flex-column">
-                      <Card.Img
-                        className={`${styles.cardImage}  img-fluid rounded-start`}
-                        variant="top"
-                        src="https://images.unsplash.com/photo-1593642634443-44adaa06623a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1325&q=80"
-                      />
-                    </Col>
-                    <Col lg={6} className="d-flex flex-column justify-content-between">
-                      <Card.Body className={styles.cardBody}>
-                        <Card.Title>
-                          Edmeda {""}
-                          <span className="text-muted blockquote-footer">
-                            Easy remote communication & collaboration for Schools
-                          </span>
-                        </Card.Title>
-                        <Card.Text className="text-muted">
-                          Edmeda is a password protected MERN-Stack Web Application which enables
-                          Schools to communicate & collaborate easily and effectively via multiple
-                          Communities. To achieve that, Teachers, Students and Parents alike are
-                          equipped with real-time Group Chats to share information instantaneously
-                          and effortlessly. Using Edmeda, Teachers can create limitless Communities
-                          - and inside those communities a limitless number of user groups. Those
-                          Communities and their User Groups can be centered around any target
-                          audience or subject, thus enabling users to achieve a targeted
-                          communication and information exchange, even in times of Corona.
-                        </Card.Text>
-                        {/* <a href="#" className="btn btn-primary">
-                          Go somewhere
-                        </a> */}
-                        <Card.Text>
-                          <h6>Tech Stack</h6>
-
-                          <ListGroup as="ul">
-                            <ListGroup.Item
-                              as="li"
-                              className="d-flex justify-content-between align-items-start"
-                            >
-                              <div className="col-3">
-                                <Badge bg="light" text="dark">
-                                  Languages
-                                </Badge>
-                              </div>
-                              <div className="col-9 text-end">
-                                <Badge bg="secondary">JavaScript</Badge>{" "}
-                                <Badge bg="secondary">HTML5</Badge>{" "}
-                                <Badge bg="secondary">CSS3</Badge>
-                              </div>
-                            </ListGroup.Item>
-                            <ListGroup.Item
-                              as="li"
-                              className="d-flex justify-content-between align-items-start"
-                            >
-                              <div className="col-3">
-                                <Badge bg="light" text="dark">
-                                  Web Stack
-                                </Badge>{" "}
-                              </div>
-                              <div className="col-9 text-end">
-                                <Badge bg="secondary">MongoDB (Mongoose)</Badge>{" "}
-                                <Badge bg="secondary">Express.js</Badge>{" "}
-                                <Badge bg="secondary">React.js</Badge>{" "}
-                                <Badge bg="secondary">Node.js</Badge>{" "}
-                              </div>
-                            </ListGroup.Item>
-                            <ListGroup.Item
-                              as="li"
-                              className="d-flex justify-content-between align-items-start"
-                            >
-                              <div className="col-3">
-                                <Badge bg="light" text="dark">
-                                  More
-                                </Badge>
-                              </div>
-                              <div className="col-9 text-end">
-                                <Badge bg="secondary">Socket.IO</Badge>{" "}
-                                <Badge bg="secondary">JWT-Auth</Badge>{" "}
-                                <Badge bg="secondary">bcryptjs</Badge>{" "}
-                                <Badge bg="secondary">localStorage</Badge>{" "}
-                                <Badge bg="secondary">React Hook Form</Badge>{" "}
-                                <Badge bg="secondary">React Responsive</Badge>{" "}
-                                <Badge bg="secondary">Axios</Badge>{" "}
-                                <Badge bg="secondary">Gender Detection</Badge>{" "}
-                                <Badge bg="secondary">Faker</Badge>{" "}
-                                <Badge bg="secondary">Heroku</Badge>{" "}
-                              </div>
-                            </ListGroup.Item>
-                          </ListGroup>
-                        </Card.Text>
-                      </Card.Body>
-                      <Card.Footer className={styles.cardFooter}>
-                        <Card.Link href="#">Details</Card.Link>
-                        <Card.Link href="https://github.com/mayinx/edmeda">Github</Card.Link>
-                        <Card.Link href="https://edmeda.herokuapp.com/">Site</Card.Link>
-                      </Card.Footer>
-                    </Col>
-                  </Row>
-                </Card>
+                <HCard
+                  head="Edmeda"
+                  subhead="Easy remote communication & collaboration for Schools"
+                  imgUrl="assets/edmeda.herokuapp.com.png"
+                  description="Edmeda is a password protected MERN-Stack Web Application which enables Schools to communicate & collaborate easily and effectively via multiple Communities. Teachers, Students and Parents alike are equipped with real-time Group Chats to share information instantaneously and effortlessly. Using Edmeda, Teachers can create limitless Communities - and inside those communities a limitless number of user groups. Those Communities and their User Groups can be centered around any target audience or subject, thus enabling users to achieve a targeted communication and information exchange, even in times of Corona."
+                  techStack={{
+                    Languages: ["JavaScript", "HTML5", "CSS3"],
+                    "Web Stack": ["MongoDB (Mongoose)", "Express.js", "React", "Node.js"],
+                    More: [
+                      "Socket.IO",
+                      "JWT-Auth",
+                      "Bcryptjs",
+                      "localStorage",
+                      "React",
+                      "Hook",
+                      "Form",
+                      "React",
+                      "Responsive",
+                      "Axios",
+                      "Gender",
+                      "Detection",
+                      "Faker",
+                      "Heroku",
+                    ],
+                  }}
+                  siteUrl="https://github.com/mayinx/edmeda"
+                  repoUrl="https://edmeda.herokuapp.com/"
+                />
               </Col>
             </Row>
           </Container>
@@ -196,4 +131,9 @@ export default function start() {
       </main>
     </>
   );
+}
+
+export async function getStaticProps() {
+  const projects = await import("../_data/projects.json");
+  return projects;
 }

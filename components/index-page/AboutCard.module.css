@@ -1,0 +1,57 @@
+.projectCard {
+  /* height: 90% !important; */
+  border-radius: 16px !important;
+}
+
+.cardImage {
+  /* border-top-left-radius: 24px !important;
+  border-top-right-radius: 24px !important; */
+  width: 92%;
+  height: 100%;
+  margin: auto;
+  position: relative;
+  top: -2.5rem;
+  /* left: -1rem; */
+
+  border-radius: 16px !important;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.63);
+  border: 1px solid whitesmoke;
+  padding: 1px;
+}
+
+.cardBody {
+  margin: -1rem 0 0 0;
+  padding: 0 2rem 2rem 2rem;
+}
+
+.cardFooter {
+  padding: 0.5rem 2rem;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  /* color: #6c757d; */
+}
+
+@media all and (min-width: 1200px) {
+  .cardImage {
+    /* width: 100%; */
+    /* width: 92%; */
+    height: 100%;
+    margin: auto;
+    /* position: static; */
+    /* top: -1.5rem;
+    left: -1.5rem; */
+  }
+
+  .cardBody {
+    margin: 0 0 0 -1rem;
+    padding: 1.5rem;
+  }
+
+  .cardFooter {
+    margin: 0 0 0 -1rem;
+    padding: 0.5rem 1.5rem;
+    /* color: #6c757d; */
+  }
+  @me;
+}

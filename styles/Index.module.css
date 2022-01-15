@@ -25,6 +25,18 @@
 .section {
   padding: 100px 0;
 }
+.aboutSection {
+  background-color: #56c6c6;
+  background-color: #14b8b8;
+  background-color: darkturquoise;
+  background-color: #37bc9b;
+
+  background-color: #4fc1e9;
+  background-color: #3bafda;
+  background-color: #48cfad;
+  background-color: #37bc9b;
+  background-color: cadetblue;
+}
 
 .sectionHead {
   margin-top: 0;
@@ -37,4 +49,47 @@
   font-weight: 400;
   margin-bottom: 75px;
   text-transform: none;
+}
+
+.aboutSection .sectionHead,
+.aboutSection .sectionSubhead {
+  color: white !important;
+}
+
+.aboutMe {
+  background-color: #56c6c6;
+  background-color: #14b8b8;
+  border-radius: 12px;
+  color: white;
+
+  background-color: #4fc1e9;
+  background-color: #3bafda;
+  background-color: #48cfad;
+  background-color: #37bc9b;
+}
+.profileImage {
+  border-radius: 100%;
+  z-index: 30;
+  border: 3px solid #fff !important;
+  box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
+}
+
+.skillTiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 130px);
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill__logo {
+  font-size: 3rem;
+}
+.skill__name {
+  font-size: 1.25rem;
+  white-space: nowrap;
 }

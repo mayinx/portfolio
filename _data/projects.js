@@ -31,6 +31,21 @@ export const projects = {
   },
   more: [
     {
+      name: "Portfolio Site",
+      subhead: "This site! How meta is this?!",
+      imgUrl: "assets/portfolio-app-1.png",
+      description:
+        "... aka 'The Minimalistic 'Hire Me Portfolio One Page Wonder'... I was really eager to get my hands on Jamstack with Next.js anyway - plus: 'one must show that one masters bootstrap 5 and can create a broschure landing page', since it's required in lots of job adds one way or the other etc. - soooo: Why not shot this at a the portfolio site that I need ...",
+      techStack: {
+        Languages: ["JavaScript", "HTML5", "CSS3"],
+        "Web Stack": ["React", "Next.js"],
+        "CSS-Framework": ["Bootstrap 5", "React Bootstrap"],
+        More: ["Vercel"],
+      },
+      siteUrl: "#",
+      repoUrl: "#",
+    },
+    {
       name: "Bello",
       subhead: "Minimalistic Kanban-style Todo-App",
       imgUrl: "assets/todoapp-react-three.vercel.app1.png",
@@ -48,7 +63,7 @@ export const projects = {
     {
       name: "Rick 'n Morty on Steroids",
       subhead: "Integrating with an API Backend ",
-      imgUrl: "assets/rick-n-morty-on-steroids.vercel.app-1.png",
+      imgUrl: "assets/rick-n-morty-on-steroids.vercel.app-8.png",
       description:
         "Integrating with an API Backend - Another fun weekend project for the neuefische-Bootcamp. And my first attempt to set something up like an React App Template Folder Structure (Work in Prgress). Features: Infinite scroll + dynamic list filtering per api calls (per status (alive, dead, unknown), per species (human, alien)) + text serach by character name - snappy filert and search bar -  and not to forget: an incredibly (voluntarily) overdone scale effect on hover over the character cards, to 'increase the horror' - muhahha... - I learned that a search for characters named chris or similar produced intersting charcters!  TODO: yeah - styling + favoriting [initial commit: 23.07.21]",
       techStack: {

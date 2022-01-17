@@ -1,17 +1,11 @@
 import styles from "./../styles/Index.module.css";
 import React, { useEffect } from "react";
-import Navbar from "react-bootstrap/Navbar";
-import Nav from "react-bootstrap/Nav";
 
 import Obfuscate from "react-obfuscate";
 
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Card from "react-bootstrap/Card";
-import Button from "react-bootstrap/Button";
-import Badge from "react-bootstrap/Badge";
-import ListGroup from "react-bootstrap/ListGroup";
 
 import { BsGithub, BsLinkedin, BsStackOverflow } from "react-icons/bs";
 import { FaXingSquare } from "react-icons/fa";
@@ -40,7 +34,6 @@ import { GiSkills } from "react-icons/gi";
 import Image from "next/image";
 
 import HCard from "../components/index-page/ProjectCardH";
-import AboutCard from "../components/index-page/AboutCard";
 
 import { projects } from "../_data/projects";
 import { skills } from "../_data/skills";
@@ -128,14 +121,16 @@ export default function Index(props) {
             </Row>
             <Row className={`${styles.aboutMe} p-lg-5 gy-5`}>
               <Col xs={12} lg={6} className="p-lg-5 d-flex justify-content-center">
-                <Image
-                  className={styles.profileImage}
-                  src="/assets/profile-pic.png"
-                  width={250}
-                  height={250}
-                  alt="profile image"
-                  // layout="responsive"
-                ></Image>
+                <div style={{ width: "250px", height: "250px", position: "relative" }}>
+                  <Image
+                    className={`${styles.profileImage} rounded-full`}
+                    src="/assets/profile-pic-spaced3-500x500.png"
+                    width={250}
+                    height={250}
+                    alt="profile image"
+                    layout="fixed"
+                  ></Image>
+                </div>
               </Col>
               <Col xs={12} lg={6} className="p-lg-5 d-flex flex-column justify-content-center">
                 {" "}

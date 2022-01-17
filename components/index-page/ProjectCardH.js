@@ -16,40 +16,36 @@ export default function hCard(props) {
   return (
     <Card bg="light" className={`${styles.projectCard} shadow-lg h-100`}>
       <Row className="g-0">
-        <Col xl={8} className="d-flex flex-column">
-          <Card.Img
-            className={`${styles.cardImage} img-fluid`}
-            variant="top"
-            src={imgUrl}
-            // src="https://images.unsplash.com/photo-1593642634443-44adaa06623a"
-          />
+        <Col xs={12} className="d-flex flex-column">
+          <Card.Img className={`${styles.cardImage} img-fluid`} variant="top" src={imgUrl} />
         </Col>
-        <Col xl={4} className="d-flex flex-column justify-content-between">
+        <Col xs={12} className="d-flex flex-column justify-content-between">
           <Card.Body className={styles.cardBody}>
-            <Card.Title>
+            <Card.Title className="h4">
               {name} {""}
               <span className="text-muted blockquote-footer">{subhead}</span>
             </Card.Title>
-            <Card.Text className="text-muted">{description}</Card.Text>
+            <Card.Text className="text-mutedmb-4">{description}</Card.Text>
             <Card.Text>
-              <h6>Tech Stack</h6>
+              <h5>Tech Stack</h5>
               <ListGroup as="ul">
                 {Object.entries(techStack).map(([category, badges]) => {
                   return (
                     <ListGroup.Item
                       as="li"
-                      className="d-flex justify-content-between align-items-start"
+                      className="row d-flex justify-content-between align-items-center"
                     >
-                      <div className="col-3">
-                        <Badge bg="light" text="dark">
-                          {category}
-                        </Badge>
+                      <div className="col-12 col-sm-3 col-lg-6">
+                        <h6 className="mb-1 mb-sm-0 text-black-50">{category}</h6>
                       </div>
-                      <div className="col-9 text-end">
+                      <div className="col-12 col-sm-9 col-lg-6 text-end">
                         {badges.map((badge) => {
                           return (
                             <>
-                              <Badge bg="secondary">{badge}</Badge>&nbsp;
+                              <Badge className="small" bg="secondary">
+                                {badge}
+                              </Badge>
+                              &nbsp;
                             </>
                           );
                         })}

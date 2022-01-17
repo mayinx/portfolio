@@ -1,7 +1,9 @@
 import styles from "./../styles/Index.module.css";
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
+
+import Obfuscate from "react-obfuscate";
 
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
@@ -11,7 +13,10 @@ import Button from "react-bootstrap/Button";
 import Badge from "react-bootstrap/Badge";
 import ListGroup from "react-bootstrap/ListGroup";
 
-import { BsGithub } from "react-icons/bs";
+import { BsGithub, BsLinkedin, BsStackOverflow } from "react-icons/bs";
+import { FaXingSquare } from "react-icons/fa";
+import { SiProtonmail } from "react-icons/si";
+
 import {
   ExpressOriginal,
   JavascriptPlain,
@@ -30,6 +35,8 @@ import {
   DiHtml5,
 } from "react-icons/di";
 
+import { GiSkills } from "react-icons/gi";
+
 import Image from "next/image";
 
 import HCard from "../components/index-page/ProjectCardH";
@@ -37,6 +44,8 @@ import AboutCard from "../components/index-page/AboutCard";
 
 import { projects } from "../_data/projects";
 import { skills } from "../_data/skills";
+
+import Header from "../components/index-page/Header";
 
 const SkillIconComponents = {
   DiCss3: DiCss3,
@@ -56,47 +65,15 @@ const SkillIconComponents = {
 // export async function getStaticProps() {
 export function getStaticProps() {
   // const { projects } = await import("../_data/projects");
-
-  console.log("projects: ", projects);
-  console.log("props.projects.more: ", projects.more);
-
   return { props: { projects } };
 }
 
-export default function start(props) {
-  // console.log(props);
+// FYI: was
+//  export default function start
+export default function Index(props) {
   return (
     <>
-      <header className={styles.header}>
-        <Navbar className={styles.navbar} fixed="top" expand="lg" variant="dark">
-          <Container fluid>
-            <Navbar.Brand href="/">Christian Daum | Full Stack Developer</Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav">
-              <Nav className="ms-auto">
-                <Nav.Link href="#current">Projects</Nav.Link>
-                <Nav.Link href="#about">About</Nav.Link>
-                <Nav.Link href="#upcoming">Upcoming</Nav.Link>
-                <Nav.Link href="#skills">Skills & Tools</Nav.Link>
-                <Nav.Link href="#contact">Blog</Nav.Link>
-              </Nav>
-            </Navbar.Collapse>
-          </Container>
-        </Navbar>
-
-        <div className={styles.headerOverlay}>
-          <div className="d-flex text-end">
-            <div className="text-white">
-              <h1 className="mb-3">Chris here.</h1>
-              <h4 className="mb-3">Full Stack Web Developer from Cologne</h4>
-              <p> - passionate about technology | currently working on Edmeda -</p>
-              <a className="btn btn-outline-light btn-lg" href="#current" role="button">
-                More
-              </a>
-            </div>
-          </div>
-        </div>
-      </header>
+      <Header />
 
       <main>
         <section id="current" className={styles.section}>
@@ -117,11 +94,14 @@ export default function start(props) {
           </Container>
         </section>
 
-        <section id="more" className={styles.section}>
+        <section id="more" className={styles.section} style={{ backgroundColor: "ghostwhite" }}>
           <Container>
             <Row>
               <Col className="text-center">
-                <h3 className={`${styles.sectionSubhead} text-muted`}>More projects</h3>
+                <h2 className={styles.sectionHead}>Previous Work</h2>
+                <h3 className={`${styles.sectionSubhead} text-muted`}>
+                  More projects I've worked on recently
+                </h3>
               </Col>
             </Row>
             <Row className="d-flex gy-5 gap-5">
@@ -142,12 +122,12 @@ export default function start(props) {
               <Col className="text-center">
                 <h2 className={styles.sectionHead}>About me</h2>
                 <h3 className={`${styles.sectionSubhead} text-muted`}>
-                  I thought you never asked!
+                  I thought you'd never asked.
                 </h3>
               </Col>
             </Row>
-            <Row className={`${styles.aboutMe} p-5 shadow-lg`}>
-              <Col xs={6} className="p-5">
+            <Row className={`${styles.aboutMe} p-lg-5 gy-5`}>
+              <Col xs={12} lg={6} className="p-5" className="d-flex justify-content-center">
                 <Image
                   className={styles.profileImage}
                   src="/assets/profile-pic.png"
@@ -156,28 +136,52 @@ export default function start(props) {
                   // layout="responsive"
                 ></Image>
               </Col>
-              <Col xs={6} className="p-5">
+              <Col
+                xs={12}
+                lg={6}
+                className="p-lg-5"
+                className="d-flex flex-column justify-content-center"
+              >
                 {" "}
                 <h1 className="mb-3">Chris here.</h1>
                 <h4 className="mb-3 font-monospace">Full Stack Web Developer from Cologne</h4>
-                <p> - passionate about technology | currently working on Edmeda -</p>
+                <ul>
+                  <li>passionate about technology | currently working on Edmeda</li>
+                  <li>studied Media Science (focus Computer Science)</li>
+                  <li>background in IT-Projectmanagement</li>
+                  <li>...</li>
+                </ul>
               </Col>
 
               {/*  2nd  */}
-              <Col xs={6} className="p-5">
+
+              <Col xs={12} lg={6} className="p-lg-5">
                 {" "}
-                <h3 className="mb-3">Skills & Tech/Tools/Tech Stack.</h3>
-                <h5 className="mb-3 font-monospace">
-                  What I'm good at / My Toolbox & Things I Can Do
-                </h5>
-                <h6 className="mb-3 font-monospace">
-                  TL;DR: MERN-Stack, Jamstack (current) - Ruby on Rails, jQuery (a while back) -
-                  C++, VBA, Java ((way) back in the days, sigh)
-                </h6>
+                <div className="d-flex gap-3 ">
+                  <div>
+                    <GiSkills size="3rem" />
+                  </div>
+                  <div>
+                    <h3 className="mb-3">Skills & Tools.</h3>
+                    <h5 className="mb-3 font-monospace">What I'm good at.</h5>
+                  </div>
+                </div>
+                <div className="lead mt-5 pt-5">
+                  <h5>TL;DR:</h5>
+                  <ul>
+                    <li>MERN-Stack, Jamstack - current stacks</li>
+                    <li>Ruby on Rails, jQuery, PostgreSQL - a while back</li>
+                    <li>C++, VBA, Java - (way) back in the days, sigh</li>
+                    <li>...</li>
+                  </ul>
+                </div>
               </Col>
-              <Col xs={6} className="p-5">
+
+              <Col xs={12} lg={6} className="p-lg-5">
                 <Row className="gy-3">
-                  <h4 className="mb-3">Languages</h4>
+                  <div className="dividerWithCaption">
+                    <span className="h5 font-monospace">Languages</span>
+                  </div>
                 </Row>
                 <Row className={styles.skillTiles}>
                   {skills.languages.map((skill) => {
@@ -197,7 +201,9 @@ export default function start(props) {
                   })}
                 </Row>
                 <Row className="gy-3 mt-3">
-                  <h4 className="mb-3">MERN-Stack</h4>
+                  <div className="dividerWithCaption">
+                    <span className="h5 font-monospace">MERN-Stack</span>
+                  </div>
                 </Row>
                 <Row className={styles.skillTiles}>
                   {skills.webStacks.mern.map((skill) => {
@@ -217,7 +223,9 @@ export default function start(props) {
                   })}
                 </Row>
                 <Row className="gy-3 mt-3">
-                  <h4 className="mb-3">Jamstack</h4>
+                  <div className="dividerWithCaption">
+                    <span className="h5 font-monospace">Jamstack</span>
+                  </div>
                 </Row>
                 <Row className={styles.skillTiles}>
                   {skills.webStacks.jam.map((skill) => {
@@ -237,7 +245,9 @@ export default function start(props) {
                   })}
                 </Row>
                 <Row className="gy-3 mt-3">
-                  <h4 className="mb-3">Rails</h4>
+                  <div className="dividerWithCaption">
+                    <span className="h5 font-monospace">Rails-Stack"</span>
+                  </div>
                 </Row>
                 <Row className={styles.skillTiles}>
                   {skills.webStacks.rails.map((skill) => {
@@ -260,8 +270,8 @@ export default function start(props) {
 
               {/* 3rd */}
 
-              <Col xs={6} className="p-5"></Col>
-              <Col xs={6} className="p-5">
+              <Col xs={6} className="p-lg-5"></Col>
+              <Col xs={6} className="p-lg-5">
                 {" "}
                 <h3 className="mb-3">Current Endevevours.</h3>
                 <h5 className="mb-3 font-monospace">Currently working on:</h5>
@@ -275,6 +285,66 @@ export default function start(props) {
           </Container>
         </section>
       </main>
+
+      <div className="container">
+        <footer className="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+          <div className="col-md-4 d-flex align-items-center">
+            <a href="/" className="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+              <svg className="bi" width="30" height="24">
+                <use xlinkHref="#bootstrap" />
+              </svg>
+            </a>
+            <span className="text-muted">&copy; 2021 Christian Daum</span>
+          </div>
+
+          <ul className="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li className="ms-3">
+              <a className="text-muted" href="https://github.com/mayinx">
+                <BsGithub size="2rem" />
+              </a>
+            </li>
+            <li className="ms-3">
+              <a
+                className="text-muted"
+                href="https://www.linkedin.com/in/christian-daum-4397a021a/"
+              >
+                <BsLinkedin size="2rem" />
+              </a>
+            </li>
+            <li className="ms-3">
+              <a className="text-muted" href="https://www.xing.com/profile/Christian_Daum33/">
+                <FaXingSquare size="2rem" />
+              </a>
+            </li>
+            <li className="ms-3">
+              <Obfuscate
+                className="text-muted"
+                email="christian.daum@email.de"
+                target="_blank"
+                headers={{
+                  bcc: "mayinxx@web.de",
+                  subject: "[Portfolio] ",
+                }}
+              >
+                <SiProtonmail size="2rem" />
+              </Obfuscate>
+              {/* <a
+                className="text-muted"
+                href="mailto:christian.daum@protonmail.com"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <SiProtonmail size="2rem" />
+              </a>*/}
+            </li>
+            <li className="ms-3">
+              <a className="text-muted" href="https://stackoverflow.com/users/664333/mayinx">
+                <BsStackOverflow size="2rem" />
+              </a>
+            </li>
+          </ul>
+        </footer>
+      </div>
     </>
   );
 }

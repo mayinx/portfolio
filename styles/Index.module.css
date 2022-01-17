@@ -1,29 +1,12 @@
-.header {
-  height: 100vh;
-  background-color: teal;
-  background-image: url(https://images.unsplash.com/photo-1593642634443-44adaa06623a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1325&q=80);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  overflow: hidden;
-  position: relative;
-}
-
-.headerOverlay {
-  position: absolute;
-  top: 25%;
-  right: 5%;
-
-  overflow: hidden;
-}
-
-.navbar {
-  background-color: rgb(0 0 0 / 30%);
-  padding: 1rem;
+.navbarSticky {
 }
 
 .section {
   padding: 100px 0;
+
+  /* -webkit-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+  position: relative; */
 }
 .aboutSection {
   background-color: #56c6c6;
@@ -36,11 +19,18 @@
   background-color: #48cfad;
   background-color: #37bc9b;
   background-color: cadetblue;
+
+  background-color: #359093;
+  background-color: #80a2a3;
+  background-color: #a1cacc;
+
+  background-color: lightslategray;
 }
 
 .sectionHead {
   margin-top: 0;
   margin-bottom: 15px;
+  color: slategray !important;
 }
 
 .sectionSubhead {
@@ -49,23 +39,21 @@
   font-weight: 400;
   margin-bottom: 75px;
   text-transform: none;
+  color: lightslategray !important;
 }
 
-.aboutSection .sectionHead,
+.aboutSection .sectionHead {
+  color: white !important;
+}
 .aboutSection .sectionSubhead {
   color: white !important;
 }
 
 .aboutMe {
-  background-color: #56c6c6;
-  background-color: #14b8b8;
   border-radius: 12px;
   color: white;
 
-  background-color: #4fc1e9;
-  background-color: #3bafda;
-  background-color: #48cfad;
-  background-color: #37bc9b;
+  /* background-color: lightslategray; */
 }
 .profileImage {
   border-radius: 100%;

@@ -270,7 +270,7 @@ export default function Index(props) {
 
               {/* 3rd */}
 
-              <Col xs={6} className="p-lg-5"></Col>
+              {/* <Col xs={6} className="p-lg-5"></Col>
               <Col xs={6} className="p-lg-5">
                 {" "}
                 <h3 className="mb-3">Current Endevevours.</h3>
@@ -280,7 +280,7 @@ export default function Index(props) {
                   having fun with #100DaysOfCode building & animating things via CSS. Follow My
                   Journey Here.
                 </h6>
-              </Col>
+              </Col> */}
             </Row>
           </Container>
         </section>

@@ -48,5 +48,8 @@ export const skills = {
   // { name: "Linux (Ubuntu)", iconComponent: "DiCss3" },
   // { name: "MS WIndwos", iconComponent: "DiCss3" },
 
+  // SCSS
+  // CSS Modules
+
   // Tools / Other / More
 };

@@ -82,7 +82,7 @@ export default function Index(props) {
               <Col className="text-center">
                 <h2 className={styles.sectionHead}>Projects</h2>
                 <h3 className={`${styles.sectionSubhead} text-muted`}>
-                  What I'm currently working on
+                  What I&apos;m currently working on
                 </h3>
               </Col>
             </Row>
@@ -100,14 +100,14 @@ export default function Index(props) {
               <Col className="text-center">
                 <h2 className={styles.sectionHead}>Previous Work</h2>
                 <h3 className={`${styles.sectionSubhead} text-muted`}>
-                  More projects I've worked on recently
+                  More projects I&lsquo;ve worked on recently
                 </h3>
               </Col>
             </Row>
             <Row className="d-flex gy-5 gap-5">
-              {props.projects.more.map((project) => {
+              {props.projects.more.map((project, idx) => {
                 return (
-                  <Col xs={12} className="mb-5">
+                  <Col xs={12} key={idx} className="mb-5">
                     <HCard {...project} />
                   </Col>
                 );
@@ -122,26 +122,22 @@ export default function Index(props) {
               <Col className="text-center">
                 <h2 className={styles.sectionHead}>About me</h2>
                 <h3 className={`${styles.sectionSubhead} text-muted`}>
-                  I thought you'd never asked.
+                  I thought you&lsquo;d never asked.
                 </h3>
               </Col>
             </Row>
             <Row className={`${styles.aboutMe} p-lg-5 gy-5`}>
-              <Col xs={12} lg={6} className="p-5" className="d-flex justify-content-center">
+              <Col xs={12} lg={6} className="p-lg-5 d-flex justify-content-center">
                 <Image
                   className={styles.profileImage}
                   src="/assets/profile-pic.png"
                   width={250}
                   height={250}
+                  alt="profile image"
                   // layout="responsive"
                 ></Image>
               </Col>
-              <Col
-                xs={12}
-                lg={6}
-                className="p-lg-5"
-                className="d-flex flex-column justify-content-center"
-              >
+              <Col xs={12} lg={6} className="p-lg-5 d-flex flex-column justify-content-center">
                 {" "}
                 <h1 className="mb-3">Chris here.</h1>
                 <h4 className="mb-3 font-monospace">Full Stack Web Developer from Cologne</h4>
@@ -163,7 +159,7 @@ export default function Index(props) {
                   </div>
                   <div>
                     <h3 className="mb-3">Skills & Tools.</h3>
-                    <h5 className="mb-3 font-monospace">What I'm good at.</h5>
+                    <h5 className="mb-3 font-monospace">What I&lsquo;m good at.</h5>
                   </div>
                 </div>
                 <div className="lead mt-5 pt-5">
@@ -184,9 +180,9 @@ export default function Index(props) {
                   </div>
                 </Row>
                 <Row className={styles.skillTiles}>
-                  {skills.languages.map((skill) => {
+                  {skills.languages.map((skill, idx) => {
                     return (
-                      <Col className={styles.skill}>
+                      <Col className={styles.skill} key={idx}>
                         <div className={styles.skill__logo}>
                           {/* <DiCss3 /> */}
                           {typeof SkillIconComponents[skill.iconComponent] !== "undefined" &&
@@ -206,9 +202,9 @@ export default function Index(props) {
                   </div>
                 </Row>
                 <Row className={styles.skillTiles}>
-                  {skills.webStacks.mern.map((skill) => {
+                  {skills.webStacks.mern.map((skill, idx) => {
                     return (
-                      <Col className={styles.skill}>
+                      <Col className={styles.skill} key={idx}>
                         <div className={styles.skill__logo}>
                           {/* <DiCss3 /> */}
                           {typeof SkillIconComponents[skill.iconComponent] !== "undefined" &&
@@ -228,9 +224,9 @@ export default function Index(props) {
                   </div>
                 </Row>
                 <Row className={styles.skillTiles}>
-                  {skills.webStacks.jam.map((skill) => {
+                  {skills.webStacks.jam.map((skill, idx) => {
                     return (
-                      <Col className={styles.skill}>
+                      <Col className={styles.skill} key={idx}>
                         <div className={styles.skill__logo}>
                           {/* <DiCss3 /> */}
                           {typeof SkillIconComponents[skill.iconComponent] !== "undefined" &&
@@ -246,13 +242,13 @@ export default function Index(props) {
                 </Row>
                 <Row className="gy-3 mt-3">
                   <div className="dividerWithCaption">
-                    <span className="h5 font-monospace">Rails-Stack"</span>
+                    <span className="h5 font-monospace">Rails-Stack</span>
                   </div>
                 </Row>
                 <Row className={styles.skillTiles}>
-                  {skills.webStacks.rails.map((skill) => {
+                  {skills.webStacks.rails.map((skill, idx) => {
                     return (
-                      <Col className={styles.skill}>
+                      <Col className={styles.skill} key={idx}>
                         <div className={styles.skill__logo}>
                           {/* <DiCss3 /> */}
                           {typeof SkillIconComponents[skill.iconComponent] !== "undefined" &&
@@ -289,11 +285,11 @@ export default function Index(props) {
       <div className="container">
         <footer className="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
           <div className="col-md-4 d-flex align-items-center">
-            <a href="/" className="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+            {/* <a href="/" className="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
               <svg className="bi" width="30" height="24">
                 <use xlinkHref="#bootstrap" />
               </svg>
-            </a>
+            </a> */}
             <span className="text-muted">&copy; 2021 Christian Daum</span>
           </div>
 

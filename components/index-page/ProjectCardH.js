@@ -29,10 +29,11 @@ export default function hCard(props) {
             <Card.Text>
               <h5>Tech Stack</h5>
               <ListGroup as="ul">
-                {Object.entries(techStack).map(([category, badges]) => {
+                {Object.entries(techStack).map(([category, badges], idx) => {
                   return (
                     <ListGroup.Item
                       as="li"
+                      key={idx}
                       className="row d-flex justify-content-between align-items-center"
                     >
                       <div className="col-12 col-sm-3 col-lg-6">

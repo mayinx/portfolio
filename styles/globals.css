@@ -39,6 +39,11 @@ a {
 .badge.large {
   font-size: 1.25rem;
 }
+
+.badge.medium-plus {
+  font-size: 1.125rem;
+}
+
 .badge.h6,
 .badge.medium {
   font-size: 1rem;
@@ -46,8 +51,29 @@ a {
 .badge.small {
   font-size: 0.75rem;
 }
-.badge.xx-small {
+.badge.x-small {
   font-size: 0.5rem;
+}
+.badge.xx-small {
+  font-size: 0.25rem;
+}
+
+/* letter spacing */
+
+.ls-1 {
+  letter-spacing: 0.0625rem;
+}
+.ls-2 {
+  letter-spacing: 0.125rem;
+}
+.ls-3 {
+  letter-spacing: 0.1875rem;
+}
+.ls-4 {
+  letter-spacing: 0.25rem;
+}
+.ls-5 {
+  letter-spacing: 0.3125rem;
 }
 
 /* divider for sections etc with ntegrated caption */

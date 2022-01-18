@@ -6,6 +6,9 @@ import Obfuscate from "react-obfuscate";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import Badge from "react-bootstrap/Badge";
+import ListGroup from "react-bootstrap/ListGroup";
+import Button from "react-bootstrap/Button";
 
 import { BsGithub, BsLinkedin, BsStackOverflow } from "react-icons/bs";
 import { FaXingSquare } from "react-icons/fa";
@@ -69,7 +72,7 @@ export default function Index(props) {
       <Header />
 
       <main>
-        <section id="current" className={styles.section}>
+        <section id="current" className={styles.section + " " + styles.currentSection}>
           <Container>
             <Row>
               <Col className="text-center">
@@ -87,7 +90,7 @@ export default function Index(props) {
           </Container>
         </section>
 
-        <section id="more" className={styles.section} style={{ backgroundColor: "ghostwhite" }}>
+        <section id="more" className={styles.section + " " + styles.moreSection}>
           <Container>
             <Row>
               <Col className="text-center">
@@ -109,6 +112,7 @@ export default function Index(props) {
           </Container>
         </section>
 
+        {/*    About  */}
         <section id="about" className={styles.section + " " + styles.aboutSection}>
           <Container>
             <Row>
@@ -119,8 +123,12 @@ export default function Index(props) {
                 </h3>
               </Col>
             </Row>
-            <Row className={`${styles.aboutMe} p-lg-5 gy-5`}>
-              <Col xs={12} lg={6} className="p-lg-5 d-flex justify-content-center">
+            <Row className={`${styles.aboutMe} gy-5 gy-lg-0 px-5`}>
+              <Col
+                xs={12}
+                lg={4}
+                className="p-lg-4 mt-lg-0 d-flex justify-content-center align-items-center"
+              >
                 <div style={{ width: "250px", height: "250px", position: "relative" }}>
                   <Image
                     className={`${styles.profileImage} rounded-full`}
@@ -132,32 +140,122 @@ export default function Index(props) {
                   ></Image>
                 </div>
               </Col>
-              <Col xs={12} lg={6} className="p-lg-5 d-flex flex-column justify-content-center">
+              <Col
+                xs={12}
+                lg={8}
+                className="p-lg-4 mt-lg-0 d-flex flex-column justify-content-center align-items-center align-items-lg-start"
+              >
                 {" "}
-                <h1 className="mb-3">Chris here.</h1>
-                <h4 className="mb-3 font-monospace">Full Stack Web Developer from Cologne</h4>
-                <ul>
-                  <li>passionate about technology | currently working on Edmeda</li>
-                  <li>studied Media Science (focus Computer Science)</li>
-                  <li>background in IT-Projectmanagement</li>
-                  <li>...</li>
+                <h1 className="mb-3 text-center text-lg-start">Chris here.</h1>
+                <h4
+                  style={{ color: "#d2d2d2 !important" }}
+                  className="mb-3 text-center text-lg-start font-monospace"
+                >
+                  Full Stack Web Developer from Cologne
+                </h4>
+                <ul className="lead fw-bolder">
+                  <li>passionate about MERN- & Jamstack development</li>
+                  <li>currently working on Edmeda, a multi-community app for Schools</li>
+                  <li>background in Media Science & IT-Projectmanagement</li>
                 </ul>
               </Col>
+            </Row>
+            <Row className="gy-5 mt-0 mt-1 px-5">
+              <Col xs={12} lg={8}>
+                <h3 className="text-light">Hi there.</h3>
+                <p className="lead fw-normal text-light">
+                  I&apos;m a passionate full-stack Web Developer based in Cologne with a background
+                  in Media Science, IT-Projectmanagment & Online-Marketing. My strengths lie within
+                  the development of MERN- & Jamstack web applications. During my studies I used to
+                  work with Ruby on Rails, both for university projects and as a freelancer. I live
+                  in Cologne where I graduated in Media Science with focus on Computer Science.
+                </p>
+                <p className="lead fw-normal text-light">
+                  Currently I'm utilizing the MERN-Stack to work on Edmeda, aiming to develope a web
+                  based solution that enables Schools to teach important digital literacies. like
+                  remote communication & collaboration by actively practicing digital mediated
+                  social communication in Communities driven by Group Chats.
+                </p>
+              </Col>
+              <Col xs={12} lg={4}>
+                <h3 className="text-light">Let&apos;s connect</h3>
+                <p className="lead fw-normal text-light mb-4">
+                  You can find me on GitHub, LinkedIn and Xing. Or feel free to drop me an e-mail -
+                  I'll be happy to get back to you ASAP...
+                </p>
+                <div className="lead fw-normal text-light d-flex flex-row justify-content-around">
+                  <Button
+                    target="_blank"
+                    size="sm"
+                    className="rounded-3"
+                    variant="outline-light"
+                    href="https://www.linkedin.com/in/christian-daum-4397a021a/"
+                  >
+                    <BsLinkedin size="2rem" /> Linkedin
+                  </Button>
+                  <Button
+                    target="_blank"
+                    size="sm"
+                    className="rounded-3"
+                    variant="outline-light"
+                    href="https://github.com/mayinx"
+                  >
+                    <BsGithub size="2rem" /> GitHub
+                  </Button>
+                  <Obfuscate
+                    className="rounded-3 btn btn-outline-light btn-sm"
+                    styles={{ wordwrap: "nowrap" }}
+                    email="christian.daum@protonmail.com"
+                    target="_blank"
+                    role="button"
+                    headers={{
+                      bcc: "christian.daum@email.de",
+                      subject: "[Portfolio] ",
+                    }}
+                  >
+                    {/* <Button
+                      target="_blank"
+                      size="sm"
+                      className="rounded-3"
+                      variant="outline-light"
+                      href="https://github.com/mayinx"
+                    > */}
+                    <SiProtonmail size="2rem" /> E-Mail
+                    {/* </Button> */}
+                  </Obfuscate>
+                </div>
+              </Col>
+            </Row>
+          </Container>
+        </section>
 
-              {/*  2nd  */}
+        {/*  Skills */}
+        <section id="skills" className={styles.section + " " + styles.skillsSection}>
+          <Container>
+            {/*  Skills Header*/}
 
-              <Col xs={12} lg={6} className="p-lg-5">
+            <Row>
+              <Col className="text-center">
+                <h2 className={styles.sectionHead}>Skills & Tools</h2>
+                <h3 className={`${styles.sectionSubhead} text-muted`}>What I&lsquo;m good at.</h3>
+              </Col>
+            </Row>
+
+            {/* <Row>
+              <Col xs={12} className="p-lg-5 d-flex flex-column align-items-center">
                 {" "}
-                <div className="d-flex gap-3 ">
+                <div className="d-flex gap-3">
                   <div>
                     <GiSkills size="3rem" />
                   </div>
                   <div>
                     <h3 className="mb-3">Skills & Tools.</h3>
-                    <h5 className="mb-3 font-monospace">What I&lsquo;m good at.</h5>
+                    <h5 style={{ color: "#d2d2d2 !important" }} className="mb-3 font-monospace">
+                      What I&lsquo;m good at.
+                    </h5>
                   </div>
                 </div>
-                <div className="lead mt-5 pt-5">
+                <div className="lead mt-5 pt-5 d-flex flex-column align-items-center">
                   <h5>TL;DR:</h5>
                   <ul>
                     <li>MERN-Stack, Jamstack - current stacks</li>
@@ -167,11 +265,14 @@ export default function Index(props) {
                   </ul>
                 </div>
               </Col>
+            </Row> */}
 
-              <Col xs={12} lg={6} className="p-lg-5">
+            {/*  3rd About Skills Languages + MERN Stack */}
+            <Row className="mt-0 gy-5">
+              <Col xs={12} lg={6} className="px-5">
                 <Row className="gy-3">
                   <div className="dividerWithCaption">
-                    <span className="h5 font-monospace">Languages</span>
+                    <span className="h5 fw-bold font-monospace">Languages</span>
                   </div>
                 </Row>
                 <Row className={styles.skillTiles}>
@@ -191,9 +292,12 @@ export default function Index(props) {
                     );
                   })}
                 </Row>
-                <Row className="gy-3 mt-3">
+              </Col>
+
+              <Col xs={12} lg={6} className="px-5">
+                <Row className="gy-3 ">
                   <div className="dividerWithCaption">
-                    <span className="h5 font-monospace">MERN-Stack</span>
+                    <span className="h5 fw-bold font-monospace">MERN-Stack</span>
                   </div>
                 </Row>
                 <Row className={styles.skillTiles}>
@@ -213,9 +317,15 @@ export default function Index(props) {
                     );
                   })}
                 </Row>
-                <Row className="gy-3 mt-3">
+              </Col>
+            </Row>
+
+            {/*  4th About Skills Jamstack + Rails Stack */}
+            <Row className="mt-auto gy-5">
+              <Col xs={12} lg={6} className="px-5">
+                <Row className="gy-3 ">
                   <div className="dividerWithCaption">
-                    <span className="h5 font-monospace">Jamstack</span>
+                    <span className="h5 fw-bold font-monospace">Jamstack</span>
                   </div>
                 </Row>
                 <Row className={styles.skillTiles}>
@@ -235,9 +345,11 @@ export default function Index(props) {
                     );
                   })}
                 </Row>
-                <Row className="gy-3 mt-3">
+              </Col>
+              <Col xs={12} lg={6} className="px-5">
+                <Row className="gy-3 ">
                   <div className="dividerWithCaption">
-                    <span className="h5 font-monospace">Rails-Stack</span>
+                    <span className="h5 fw-bold font-monospace">Rails-Stack</span>
                   </div>
                 </Row>
                 <Row className={styles.skillTiles}>
@@ -258,10 +370,104 @@ export default function Index(props) {
                   })}
                 </Row>
               </Col>
+            </Row>
 
-              {/* 3rd */}
+            {/*  5th About Skills TL;DR */}
 
-              {/* <Col xs={6} className="p-lg-5"></Col>
+            <Row className="mt-5 gy-5 p-3 p-md-5">
+              <Col xs={12} className="px-5">
+                <Row className="gy-3 ">
+                  <div className="dividerWithCaption">
+                    <span className="h3 font-monospace">TL;DR</span>
+                  </div>
+                </Row>
+                <Row className="p-1 mt-3">
+                  <Col xs={12} className="px-5">
+                    {/* <div className="align-items-center d-flex flex-column lead"> */}
+                    <ListGroup as="ul" className={styles.tldrListGroup}>
+                      <ListGroup.Item
+                        as="li"
+                        className={`row d-flex justify-content-between align-items-center ${styles.tldrListItemCurrent}`}
+                      >
+                        <div className="col-12 col-md-4 col-lg-6 col-xl-4">
+                          <h6 className="ls-1 mb-3 mb-md-0 text-black-50">Current</h6>
+                        </div>
+                        <div className="col-12 col-md-8 col-lg-6 col-xl-8 d-flex flex-row flex-wrap gap-1 gap-sm-1 justify-content-end">
+                          <Badge className="medium-plus" bg="secondary">
+                            JavaScript
+                          </Badge>
+                          <Badge className="medium-plus" bg="secondary">
+                            MERN-Stack
+                          </Badge>
+                          <Badge className="medium-plus" bg="secondary">
+                            Jamstack
+                          </Badge>
+                          <Badge className="medium-plus" bg="secondary">
+                            Bootstrap
+                          </Badge>
+                          <Badge className="medium-plus" bg="secondary">
+                            CSS Modules
+                          </Badge>
+                          <Badge className="medium-plus" bg="secondary">
+                            SCSS
+                          </Badge>
+                        </div>
+                      </ListGroup.Item>
+                      <ListGroup.Item
+                        as="li"
+                        className={`row d-flex justify-content-between align-items-center ${styles.tldrListItemWhileBack}`}
+                      >
+                        <div className="col-12 col-md-4 col-lg-6 col-xl-4">
+                          <h6 className="fw-bold ls-1 mb-3 mb-md-0 text-black-50">A while back</h6>
+                        </div>
+                        <div className="col-12 col-md-8 col-lg-6 col-xl-8 d-flex flex-row flex-wrap gap-1 gap-sm-1 justify-content-end">
+                          <Badge className="medium-plus" bg="secondary">
+                            Ruby
+                          </Badge>
+                          <Badge className="medium-plus" bg="secondary">
+                            Ruby on Rails
+                          </Badge>
+                          <Badge className="medium-plus" bg="secondary">
+                            jQuery
+                          </Badge>
+                          <Badge className="medium-plus" bg="secondary">
+                            PostgreSQL
+                          </Badge>
+                        </div>
+                      </ListGroup.Item>
+                      <ListGroup.Item
+                        as="li"
+                        className={`row d-flex justify-content-between align-items-center ${styles.tldrListItemWayBack}`}
+                      >
+                        <div className="col-12 col-md-4 col-lg-6 col-xl-4">
+                          <h6 className="fw-bold ls-1 mb-3 mb-md-0 text-black-50">
+                            (Way) back in the days, sigh
+                          </h6>
+                        </div>
+                        <div className="col-12 col-md-8 col-lg-6 col-xl-8 d-flex flex-row flex-wrap gap-1 gap-sm-1 justify-content-end">
+                          <Badge className="medium-plus" bg="secondary">
+                            C++
+                          </Badge>
+                          <Badge className="medium-plus" bg="secondary">
+                            VBA
+                          </Badge>
+                          <Badge className="medium-plus" bg="secondary">
+                            Java
+                          </Badge>
+                        </div>
+                      </ListGroup.Item>
+                    </ListGroup>
+                    {/* </div> */}
+                  </Col>
+                </Row>
+              </Col>
+            </Row>
+
+            {/* </Col> */}
+
+            {/* 3rd */}
+
+            {/* <Col xs={6} className="p-lg-5"></Col>
               <Col xs={6} className="p-lg-5">
                 {" "}
                 <h3 className="mb-3">Current Endevevours.</h3>
@@ -272,7 +478,7 @@ export default function Index(props) {
                   Journey Here.
                 </h6>
               </Col> */}
-            </Row>
+            {/* </Row> */}
           </Container>
         </section>
       </main>
@@ -307,13 +513,14 @@ export default function Index(props) {
                 <FaXingSquare size="2rem" />
               </a>
             </li>
+
             <li className="ms-3">
               <Obfuscate
                 className="text-muted"
-                email="christian.daum@email.de"
+                email="christian.daum@protonmail.com"
                 target="_blank"
                 headers={{
-                  bcc: "mayinxx@web.de",
+                  bcc: "christian.daum@email.de",
                   subject: "[Portfolio] ",
                 }}
               >

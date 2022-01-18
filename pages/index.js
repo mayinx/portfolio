@@ -171,17 +171,17 @@ export default function Index(props) {
                   in Cologne where I graduated in Media Science with focus on Computer Science.
                 </p>
                 <p className="lead fw-normal text-light">
-                  Currently I'm utilizing the MERN-Stack to work on Edmeda, aiming to develope a web
-                  based solution that enables Schools to teach important digital literacies. like
-                  remote communication & collaboration by actively practicing digital mediated
+                  Currently I&apos;m utilizing the MERN-Stack to work on Edmeda, aiming to develope
+                  a web based solution that enables Schools to teach important digital literacies.
+                  like remote communication & collaboration by actively practicing digital mediated
                   social communication in Communities driven by Group Chats.
                 </p>
               </Col>
               <Col xs={12} lg={4}>
-                <h3 className="text-light">Let&apos;s connect</h3>
+                <h3 className="text-light">Let&apos;s connect.</h3>
                 <p className="lead fw-normal text-light mb-4">
                   You can find me on GitHub, LinkedIn and Xing. Or feel free to drop me an e-mail -
-                  I'll be happy to get back to you ASAP...
+                  I&apos;ll be happy to get back to you ASAP...
                 </p>
                 <div className="lead fw-normal text-light d-flex flex-row justify-content-around">
                   <Button
@@ -209,7 +209,6 @@ export default function Index(props) {
                     target="_blank"
                     role="button"
                     headers={{
-                      bcc: "christian.daum@email.de",
                       subject: "[Portfolio] ",
                     }}
                   >
@@ -520,7 +519,6 @@ export default function Index(props) {
                 email="christian.daum@protonmail.com"
                 target="_blank"
                 headers={{
-                  bcc: "christian.daum@email.de",
                   subject: "[Portfolio] ",
                 }}
               >

@@ -30,7 +30,7 @@ export default function Header() {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
-              <Nav.Link href="#top">Start</Nav.Link>
+              <Nav.Link href="/">Start</Nav.Link>
               <Nav.Link href="#current">Projects</Nav.Link>
               <Nav.Link href="#about">About</Nav.Link>
               <Nav.Link href="#skills">Skills & Tools</Nav.Link>

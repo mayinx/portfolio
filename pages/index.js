@@ -171,10 +171,13 @@ export default function Index(props) {
                   in Cologne where I graduated in Media Science with focus on Computer Science.
                 </p>
                 <p className="lead fw-normal text-light">
-                  Currently I&apos;m utilizing the MERN-Stack to work on Edmeda, aiming to develope
-                  a web based solution that enables Schools to teach important digital literacies.
-                  like remote communication & collaboration by actively practicing digital mediated
-                  social communication in Communities driven by Group Chats.
+                  Currently I&apos;m utilizing the MERN-Stack to work on{" "}
+                  <a href="#projects" className="link-info text-decoration-underline">
+                    Edmeda
+                  </a>
+                  , aiming to develop a web based solution that enables Schools to implicitly teach
+                  important digital literacies through active practice of digital mediated social
+                  communication in community group chats.
                 </p>
               </Col>
               <Col xs={12} lg={4}>
@@ -212,15 +215,7 @@ export default function Index(props) {
                       subject: "[Portfolio] ",
                     }}
                   >
-                    {/* <Button
-                      target="_blank"
-                      size="sm"
-                      className="rounded-3"
-                      variant="outline-light"
-                      href="https://github.com/mayinx"
-                    > */}
                     <SiProtonmail size="2rem" /> E-Mail
-                    {/* </Button> */}
                   </Obfuscate>
                 </div>
               </Col>

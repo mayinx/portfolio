@@ -15,7 +15,43 @@ a {
   box-sizing: border-box;
 }
 
-/* Utilties */
+/* divider for sections etc with ntegrated caption */
+/* credit: https://stackoverflow.com/questions/2812770/add-centered-text-to-the-middle-of-a-horizontal-rule */
+
+.dividerWithCaption {
+  display: block;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.dividerWithCaption > span {
+  position: relative;
+  display: inline-block;
+}
+
+.dividerWithCaption > span:before,
+.dividerWithCaption > span:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 9999px;
+  height: 1px;
+  background: white;
+}
+
+.dividerWithCaption > span:before {
+  right: 100%;
+  margin-right: 15px;
+}
+
+.dividerWithCaption > span:after {
+  left: 100%;
+  margin-left: 15px;
+}
+
+/* UTILTIES / CUSTOM BS-EXTENSIONS*/
+/* TODO: refactor into separate file  */
 
 /* Sizing for bootstrap badges */
 
@@ -76,37 +112,7 @@ a {
   letter-spacing: 0.3125rem;
 }
 
-/* divider for sections etc with ntegrated caption */
-/* credit: https://stackoverflow.com/questions/2812770/add-centered-text-to-the-middle-of-a-horizontal-rule */
-
-.dividerWithCaption {
-  display: block;
-  text-align: center;
-  overflow: hidden;
-  white-space: nowrap;
-}
-
-.dividerWithCaption > span {
-  position: relative;
-  display: inline-block;
-}
-
-.dividerWithCaption > span:before,
-.dividerWithCaption > span:after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  width: 9999px;
-  height: 1px;
-  background: white;
-}
-
-.dividerWithCaption > span:before {
-  right: 100%;
-  margin-right: 15px;
-}
-
-.dividerWithCaption > span:after {
-  left: 100%;
-  margin-left: 15px;
+/* font-weight */
+.fw-500 {
+  font-weight: 500;
 }

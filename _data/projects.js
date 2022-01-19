@@ -5,6 +5,8 @@ export const projects = {
     imgUrl: "assets/edmeda.herokuapp.com.png",
     description:
       "Edmeda is a password protected MERN-Stack Web Application which enables Schools to communicate & collaborate easily and effectively via multiple Communities. Teachers, Students and Parents alike are equipped with real-time Group Chats to share information instantaneously and effortlessly. Using Edmeda, Teachers can create limitless Communities - and inside those communities a limitless number of user groups. Those Communities and their User Groups can be centered around any target audience or subject, thus enabling users to achieve a targeted communication and information exchange, even in times of Corona.",
+    motivation:
+      "Web-based remote communication & collaboration is an increasingly important subject, not only for companies but also for schools, especially in times of Covid-19. In addition to ensuring subject-related communication during lockdowns, working with Social Web applications enables Schools to teach important skill sets like teamwork and digital literacies by actively practicing digital mediated social communication. With that in mind, Edmeda was created.",
     techStack: {
       Languages: ["JavaScript", "HTML5", "CSS3"],
       "Web Stack": ["MongoDB (Mongoose)", "Express.js", "React", "Node.js"],

@@ -10,9 +10,8 @@ import Badge from "react-bootstrap/Badge";
 import ListGroup from "react-bootstrap/ListGroup";
 import Button from "react-bootstrap/Button";
 
-import { BsGithub, BsLinkedin, BsStackOverflow } from "react-icons/bs";
+import { BsGithub, BsLinkedin, BsStackOverflow, BsEnvelopeFill } from "react-icons/bs";
 import { FaXingSquare } from "react-icons/fa";
-import { SiProtonmail } from "react-icons/si";
 
 import {
   ExpressOriginal,
@@ -131,7 +130,7 @@ export default function Index(props) {
               >
                 <div style={{ width: "250px", height: "250px", position: "relative" }}>
                   <Image
-                    className={`${styles.profileImage} rounded-full`}
+                    className={`${styles.aboutProfileImage} rounded-full`}
                     src="/assets/profile-pic-spaced3-500x500.png"
                     width={250}
                     height={250}
@@ -149,14 +148,14 @@ export default function Index(props) {
                 <h1 className="mb-3 text-center text-lg-start">Chris here.</h1>
                 <h4
                   style={{ color: "#d2d2d2 !important" }}
-                  className="mb-3 text-center text-lg-start font-monospace"
+                  className="mb-3 text-center text-lg-start"
                 >
                   Full Stack Web Developer from Cologne
                 </h4>
-                <ul className="lead fw-bolder">
-                  <li>passionate about MERN- & Jamstack development</li>
-                  <li>currently working on Edmeda, a multi-community app for Schools</li>
-                  <li>background in Media Science & IT-Projectmanagement</li>
+                <ul className={`${styles.aboutTldrList} lead fw-500 text-light`}>
+                  <li>Passionate about MERN- & Jamstack development.</li>
+                  <li>Currently working on Edmeda, a multi-community app for schools.</li>
+                  <li>Background in Media Science & IT-Projectmanagement.</li>
                 </ul>
               </Col>
             </Row>
@@ -182,40 +181,55 @@ export default function Index(props) {
               </Col>
               <Col xs={12} lg={4}>
                 <h3 className="text-light">Let&apos;s connect.</h3>
-                <p className="lead fw-normal text-light mb-4">
+                <p className="lead fw-normal text-light mb-5 mb-lg-4">
                   You can find me on GitHub, LinkedIn and Xing. Feel free to drop me an e-mail -
                   I&apos;ll be happy to get back to you ASAP...
                 </p>
-                <div className="lead fw-normal text-light d-flex flex-row justify-content-around">
+                <div className={`${styles.aboutContactOptions} lead fw-normal text-light pt-lg-1`}>
                   <Button
                     target="_blank"
                     size="sm"
                     className="rounded-3 shadow"
-                    variant="outline-light"
-                    href="https://www.linkedin.com/in/christian-daum-4397a021a/"
-                  >
-                    <BsLinkedin size="2rem" /> Linkedin
-                  </Button>
-                  <Button
-                    target="_blank"
-                    size="sm"
-                    className="rounded-3 shadow"
-                    variant="outline-light"
+                    variant="light"
                     href="https://github.com/mayinx"
                   >
-                    <BsGithub size="2rem" /> GitHub
+                    <BsGithub size="2rem" />
+                    <span className="text-nowrap ps-2">GitHub</span>
                   </Button>
+                  <Button
+                    target="_blank"
+                    size="sm"
+                    className="rounded-3 shadow"
+                    variant="light"
+                    href="https://www.linkedin.com/in/christian-daum-4397a021a/"
+                  >
+                    <BsLinkedin size="2rem" />
+                    <span className="text-nowrap ps-2">Linkedin</span>
+                  </Button>
+                  <Button
+                    target="_blank"
+                    size="sm"
+                    className="rounded-3 shadow"
+                    variant="light"
+                    href="ttps://www.xing.com/profile/Christian_Daum33/"
+                  >
+                    <FaXingSquare size="2rem" />
+                    <span className="text-nowrap ps-2">Xing</span>
+                  </Button>
+
                   <Obfuscate
-                    className="rounded-3  shadow btn btn-outline-light btn-sm"
+                    className="rounded-3 shadow btn btn-light btn-sm"
                     styles={{ wordwrap: "nowrap" }}
                     email="christian.daum@protonmail.com"
                     target="_blank"
                     role="button"
+                    tabindex="0"
                     headers={{
                       subject: "[Portfolio] ",
                     }}
                   >
-                    <SiProtonmail size="2rem" /> E-Mail
+                    <BsEnvelopeFill size="2rem" />
+                    <span className="text-nowrap ps-2 text-black-75">E-Mail</span>
                   </Obfuscate>
                 </div>
               </Col>
@@ -478,8 +492,8 @@ export default function Index(props) {
       </main>
 
       <div className="container">
-        <footer className="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-          <div className="col-md-4 d-flex align-items-center">
+        <footer className="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 gap-3 border-top">
+          <div className="col-12 col-md-5 d-flex justify-content-center justify-content-md-start align-items-center">
             {/* <a href="/" className="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
               <svg className="bi" width="30" height="24">
                 <use xlinkHref="#bootstrap" />
@@ -488,7 +502,7 @@ export default function Index(props) {
             <span className="text-muted">&copy; 2021 Christian Daum</span>
           </div>
 
-          <ul className="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <ul className="nav col-12 col-md-5 justify-content-center justify-content-md-end list-unstyled d-flex">
             <li className="ms-3">
               <a className="text-muted" href="https://github.com/mayinx">
                 <BsGithub size="2rem" />
@@ -517,16 +531,8 @@ export default function Index(props) {
                   subject: "[Portfolio] ",
                 }}
               >
-                <SiProtonmail size="2rem" />
+                <BsEnvelopeFill size="2rem" />
               </Obfuscate>
-              {/* <a
-                className="text-muted"
-                href="mailto:christian.daum@protonmail.com"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <SiProtonmail size="2rem" />
-              </a>*/}
             </li>
             <li className="ms-3">
               <a className="text-muted" href="https://stackoverflow.com/users/664333/mayinx">

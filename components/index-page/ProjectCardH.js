@@ -10,7 +10,7 @@ import ListGroup from "react-bootstrap/ListGroup";
 import { BsGithub } from "react-icons/bs";
 
 export default function hCard(props) {
-  const { name, subhead, description, techStack, imgUrl, siteUrl, repoUrl } = props;
+  const { name, subhead, description, motivation, techStack, imgUrl, siteUrl, repoUrl } = props;
   console.log("hCardProps: ", props);
 
   return (
@@ -26,8 +26,8 @@ export default function hCard(props) {
               <span className="text-muted blockquote-footer">{subhead}</span>
             </Card.Title>
             <Card.Text className="text-mutedmb-4">{description}</Card.Text>
+            <h5>Tech Stack</h5>
             <Card.Text>
-              <h5>Tech Stack</h5>
               <ListGroup as="ul">
                 {Object.entries(techStack).map(([category, badges], idx) => {
                   return (

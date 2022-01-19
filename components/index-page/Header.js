@@ -24,7 +24,7 @@ export default function Header() {
 
   return (
     <header id="top" className={`${styles.header} shadow-lg`}>
-      <Navbar className={navbarClass} fixed="top" expand="lg" variant="dark">
+      <Navbar className={`${navbarClass} shadow-lg`} expand="lg" variant="dark">
         <Container fluid>
           <Navbar.Brand href="/">Christian Daum | Full Stack Developer</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />

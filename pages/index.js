@@ -31,11 +31,9 @@ import {
   DiHtml5,
 } from "react-icons/di";
 
-import { GiSkills } from "react-icons/gi";
-
 import Image from "next/image";
 
-import HCard from "../components/index-page/ProjectCardH";
+import HCard from "../components/index-page/ProjectCard";
 
 import { projects } from "../_data/projects";
 import { skills } from "../_data/skills";
@@ -398,11 +396,19 @@ export default function Index(props) {
                         className={`row d-flex justify-content-between align-items-center ${styles.tldrListItemCurrent}`}
                       >
                         <div className="col-12 col-md-4 col-lg-6 col-xl-4">
-                          <h6 className="ls-1 mb-3 mb-md-0 text-black-50">Current</h6>
+                          <h5 className="ls-1 mb-3 mb-md-0 text-black-50 text-center text-md-start">
+                            Current Tech Stack
+                          </h5>
                         </div>
-                        <div className="col-12 col-md-8 col-lg-6 col-xl-8 d-flex flex-row flex-wrap gap-1 gap-sm-1 justify-content-end">
+                        <div className="col-12 col-lg-6 col-md-8 col-xl-8 d-flex flex-column flex-sm-row flex-wrap align-content-center gap-1 gap-sm-1 justify-content-end">
                           <Badge className="medium-plus" bg="secondary">
                             JavaScript
+                          </Badge>
+                          <Badge className="medium-plus" bg="secondary">
+                            HTML5
+                          </Badge>
+                          <Badge className="medium-plus" bg="secondary">
+                            CSS3
                           </Badge>
                           <Badge className="medium-plus" bg="secondary">
                             MERN-Stack
@@ -417,7 +423,7 @@ export default function Index(props) {
                             CSS Modules
                           </Badge>
                           <Badge className="medium-plus" bg="secondary">
-                            SCSS
+                            VS Code
                           </Badge>
                         </div>
                       </ListGroup.Item>
@@ -426,9 +432,11 @@ export default function Index(props) {
                         className={`row d-flex justify-content-between align-items-center ${styles.tldrListItemWhileBack}`}
                       >
                         <div className="col-12 col-md-4 col-lg-6 col-xl-4">
-                          <h6 className="fw-bold ls-1 mb-3 mb-md-0 text-black-50">A while back</h6>
+                          <h5 className="ls-1 mb-3 mb-md-0 text-black-50 text-center text-md-start">
+                            A while back
+                          </h5>
                         </div>
-                        <div className="col-12 col-md-8 col-lg-6 col-xl-8 d-flex flex-row flex-wrap gap-1 gap-sm-1 justify-content-end">
+                        <div className="col-12 col-lg-6 col-md-8 col-xl-8 d-flex flex-column flex-sm-row flex-wrap align-content-center gap-1 gap-sm-1 justify-content-end">
                           <Badge className="medium-plus" bg="secondary">
                             Ruby
                           </Badge>
@@ -441,6 +449,12 @@ export default function Index(props) {
                           <Badge className="medium-plus" bg="secondary">
                             PostgreSQL
                           </Badge>
+                          <Badge className="medium-plus" bg="secondary">
+                            SCSS
+                          </Badge>
+                          <Badge className="medium-plus" bg="secondary">
+                            Sublime Text
+                          </Badge>
                         </div>
                       </ListGroup.Item>
                       <ListGroup.Item
@@ -448,13 +462,22 @@ export default function Index(props) {
                         className={`row d-flex justify-content-between align-items-center ${styles.tldrListItemWayBack}`}
                       >
                         <div className="col-12 col-md-4 col-lg-6 col-xl-4">
-                          <h6 className="fw-bold ls-1 mb-3 mb-md-0 text-black-50">
+                          <h5 className="ls-1 mb-3 mb-md-0 text-black-50 text-center text-md-start">
                             (Way) back in the days, sigh
-                          </h6>
+                          </h5>
                         </div>
-                        <div className="col-12 col-md-8 col-lg-6 col-xl-8 d-flex flex-row flex-wrap gap-1 gap-sm-1 justify-content-end">
+                        <div className="col-12 col-lg-6 col-md-8 col-xl-8 d-flex flex-column flex-sm-row flex-wrap align-content-center gap-1 gap-sm-1 justify-content-end">
                           <Badge className="medium-plus" bg="secondary">
                             C++
+                          </Badge>
+                          <Badge className="medium-plus" bg="secondary">
+                            Qt
+                          </Badge>
+                          <Badge className="medium-plus" bg="secondary">
+                            MFC
+                          </Badge>
+                          <Badge className="medium-plus" bg="secondary">
+                            DirectX
                           </Badge>
                           <Badge className="medium-plus" bg="secondary">
                             VBA
@@ -470,23 +493,6 @@ export default function Index(props) {
                 </Row>
               </Col>
             </Row>
-
-            {/* </Col> */}
-
-            {/* 3rd */}
-
-            {/* <Col xs={6} className="p-lg-5"></Col>
-              <Col xs={6} className="p-lg-5">
-                {" "}
-                <h3 className="mb-3">Current Endevevours.</h3>
-                <h5 className="mb-3 font-monospace">Currently working on:</h5>
-                <h6 className="mb-3 font-monospace">
-                  Improving my skills in, and understanding of vanilla JavaScript and React. Also,
-                  having fun with #100DaysOfCode building & animating things via CSS. Follow My
-                  Journey Here.
-                </h6>
-              </Col> */}
-            {/* </Row> */}
           </Container>
         </section>
       </main>

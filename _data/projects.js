@@ -10,7 +10,7 @@ export const projects = {
     techStack: {
       Languages: ["JavaScript", "HTML5", "CSS3"],
       "Web Stack": ["MongoDB (Mongoose)", "Express.js", "React", "Node.js"],
-      "CSS-Framework": ["None", "'Handcrafted'"],
+      "CSS-Framework": ["None: 'Handcrafted'"],
       More: [
         "Socket.IO",
         "JWT-Auth",
@@ -24,6 +24,7 @@ export const projects = {
         "Heroku",
       ],
     },
+    provider: "Heroku",
     siteUrl: "https://edmeda.herokuapp.com/",
     repoUrl: "https://github.com/mayinx/edmeda",
   },
@@ -33,13 +34,21 @@ export const projects = {
       subhead: "Minimalistic Kanban-style Todo-App",
       imgUrl: "assets/todoapp-react-three.vercel.app1.png",
       description:
-        "... aka the 'Getting-Stuff-Done-App Trello is afraid of' ;-) - a Weekend-Project created for the neuefische-Bootcamp. Really a fun one - unfortunately not enough time to implement responsiveness, multipe boards, drag 'n drop and, what, not, etc. - I'm definetively going to revisit this one. If it weren't for Edemda, I would have choosen to extend Bello as Capstone-Project, but no, it must be the hard way...",
+        "... aka the 'Getting-Stuff-Done-App Trello is afraid of' ;-) - a weekend-project created for the neuefische-Bootcamp. Really a fun one... Notable features include 'list specific task limits' & 'task completion points', which can be earned by performing as a good working bee - or lost if tasks are reopened...",
+      // "... aka the 'Getting-Stuff-Done-App Trello is afraid of' ;-) - a weekend-project created for the neuefische-Bootcamp. Really a fun one -  unfortunately one weekend wasn't enough to implement other features like multipe boards, drag 'n drop, responsiveness, and, what, not, etc.  .",
+      // features: [
+      //   "Tasks-CRUD",
+      //   "Task priorities",
+      //   "Task status lifecycle (backlog, active, completed, archived",
+      //   "Task sorted by priorities"
+      // ],
       techStack: {
         Languages: ["JavaScript", "HTML5", "CSS3"],
         "Web Stack": ["React", "Create React App"],
-        "CSS-Framework": ["None", "'Handcrafted'"],
+        "CSS-Framework": ["None: 'Handcrafted'"],
         More: ["localStorage", "react-toastify", "react-select", "react-toastify", "Vercel"],
       },
+      provider: "Vercel",
       siteUrl: "https://todoapp-react-three.vercel.app/",
       repoUrl: "https://github.com/mayinx/bello",
     },
@@ -48,13 +57,14 @@ export const projects = {
       subhead: "Integrating with an API Backend ",
       imgUrl: "assets/rick-n-morty-on-steroids.vercel.app-8.png",
       description:
-        "Integrating with an API Backend - Another fun weekend project for the neuefische-Bootcamp. And my first attempt to set something up like an React App Template Folder Structure (Work in Prgress). Features: Infinite scroll + dynamic list filtering per api calls (per status (alive, dead, unknown), per species (human, alien)) + text serach by character name - snappy filert and search bar -  and not to forget: an incredibly (voluntarily) overdone scale effect on hover over the character cards, to 'increase the horror' - muhahha... - I learned that a search for characters named chris or similar produced intersting charcters!  TODO: yeah - styling + favoriting [initial commit: 23.07.21]",
+        "Another fun weekend project for the neuefische-Bootcamp. And my first attempt to set something up like a 'Default React App Folder Structure' (work in progress). Notable features include: Infinite scroll, dynamic list filtering (per status, species, character name), snappy filter & search bar, and not to forget: An incredibly (voluntarily) overdone scale effect on hover over the character cards, to 'increase the horror' - muhahha.... Takeaways: I learned that React-driven web development is blazing fast - and that a search for characters named 'Chris' or similar produced ...intersting results!",
       techStack: {
         Languages: ["JavaScript", "HTML5", "CSS3"],
         "Web Stack": ["React", "Create React App"],
-        "CSS-Framework": ["None", "'Handcrafted'"],
+        "CSS-Framework": ["None: 'Handcrafted'"],
         More: ["fetch", "api", "rick and morty", "localStorage", "Vercel"],
       },
+      provider: "Vercel",
       siteUrl: "https://rick-n-morty-on-steroids.vercel.app/",
       repoUrl: "https://github.com/mayinx/rick-n-morty-on-steroids",
     },
@@ -70,8 +80,9 @@ export const projects = {
         "CSS-Framework": ["Bootstrap 5", "React Bootstrap"],
         More: ["Vercel"],
       },
-      siteUrl: "#",
-      repoUrl: "#",
+      provider: "Vercel",
+      siteUrl: "www.cdco.dev",
+      repoUrl: "https://github.com/mayinx/portfolio",
     },
   ],
 };

@@ -19,6 +19,10 @@
   padding: 1px;
 }
 
+.cardTitle {
+  font-size: calc(1.275rem + 0.3vw) !important;
+}
+
 .cardBody {
   margin: -1rem 0 0 0;
   padding: 0 2rem 2rem 2rem;

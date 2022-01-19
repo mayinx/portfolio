@@ -43,8 +43,8 @@ export const skills = {
 
   // Deployment
   deployement: [
-    { name: "Heroku", iconComponent: "DiCss3" },
-    { name: "Vercel", iconComponent: "DiCss3" },
+    { name: "Heroku", iconComponent: "SiHeroku" },
+    { name: "Vercel", iconComponent: "SiVercel" },
   ],
 
   // // Code Review

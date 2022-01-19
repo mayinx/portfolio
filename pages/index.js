@@ -72,7 +72,7 @@ export default function Index(props) {
       <Header />
 
       <main>
-        <section id="current" className={styles.section + " " + styles.currentSection}>
+        <section id="featured" className={styles.section + " " + styles.currentSection}>
           <Container>
             <Row>
               <Col className="text-center">
@@ -164,15 +164,15 @@ export default function Index(props) {
               <Col xs={12} lg={8}>
                 <h3 className="text-light">Hi there.</h3>
                 <p className="lead fw-normal text-light">
-                  I&apos;m a passionate full-stack Web Developer based in Cologne with a background
-                  in Media Science, IT-Projectmanagment & Online-Marketing. My strengths lie within
-                  the development of MERN- & Jamstack web applications. During my studies I used to
-                  work with Ruby on Rails, both for university projects and as a freelancer. I live
-                  in Cologne where I graduated in Media Science with focus on Computer Science.
+                  I&apos;m a passionate full-stack Web Developer with a background in Media Science,
+                  IT-Projectmanagment & Online-Marketing. My strengths lie within the development of
+                  MERN- & Jamstack web applications. During my studies I used to work with Ruby on
+                  Rails, both for university projects and as a freelancer. I live in Cologne where I
+                  graduated in Media Science with focus on Computer Science.
                 </p>
                 <p className="lead fw-normal text-light">
                   Currently I&apos;m utilizing the MERN-Stack to work on{" "}
-                  <a href="#projects" className="link-info text-decoration-underline">
+                  <a href="#featured" className="link-info text-decoration-underline">
                     Edmeda
                   </a>
                   , aiming to develop a web based solution that enables Schools to implicitly teach
@@ -183,14 +183,14 @@ export default function Index(props) {
               <Col xs={12} lg={4}>
                 <h3 className="text-light">Let&apos;s connect.</h3>
                 <p className="lead fw-normal text-light mb-4">
-                  You can find me on GitHub, LinkedIn and Xing. Or feel free to drop me an e-mail -
+                  You can find me on GitHub, LinkedIn and Xing. Feel free to drop me an e-mail -
                   I&apos;ll be happy to get back to you ASAP...
                 </p>
                 <div className="lead fw-normal text-light d-flex flex-row justify-content-around">
                   <Button
                     target="_blank"
                     size="sm"
-                    className="rounded-3"
+                    className="rounded-3 shadow"
                     variant="outline-light"
                     href="https://www.linkedin.com/in/christian-daum-4397a021a/"
                   >
@@ -199,14 +199,14 @@ export default function Index(props) {
                   <Button
                     target="_blank"
                     size="sm"
-                    className="rounded-3"
+                    className="rounded-3 shadow"
                     variant="outline-light"
                     href="https://github.com/mayinx"
                   >
                     <BsGithub size="2rem" /> GitHub
                   </Button>
                   <Obfuscate
-                    className="rounded-3 btn btn-outline-light btn-sm"
+                    className="rounded-3  shadow btn btn-outline-light btn-sm"
                     styles={{ wordwrap: "nowrap" }}
                     email="christian.daum@protonmail.com"
                     target="_blank"

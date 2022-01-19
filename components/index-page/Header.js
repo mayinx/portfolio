@@ -31,7 +31,7 @@ export default function Header() {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
               <Nav.Link href="/">Start</Nav.Link>
-              <Nav.Link href="#current">Projects</Nav.Link>
+              <Nav.Link href="#featured">Projects</Nav.Link>
               <Nav.Link href="#about">About</Nav.Link>
               <Nav.Link href="#skills">Skills & Tools</Nav.Link>
               {/* <Nav.Link href="#upcoming">Upcoming</Nav.Link> */}
@@ -47,7 +47,7 @@ export default function Header() {
             <h1 className="mb-3">Chris here.</h1>
             <h4 className="mb-3">Full Stack Web Developer from Cologne</h4>
             <p> - passionate about technology | currently working on Edmeda -</p>
-            <a className="btn btn-outline-light btn-lg" href="#current" role="button">
+            <a className="btn btn-outline-light btn-lg" href="#featured" role="button">
               More
             </a>
           </div>

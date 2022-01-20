@@ -25,3 +25,13 @@
 .navbar:hover {
   background-color: rgb(119 136 153 / 90%);
 }
+
+.navBrandSubhead {
+  font-size: 1rem;
+}
+
+@media all and (min-width: 576px) {
+  .navBrandSubhead {
+    font-size: inherit;
+  }
+}

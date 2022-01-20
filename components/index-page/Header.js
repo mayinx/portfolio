@@ -25,8 +25,16 @@ export default function Header() {
   return (
     <header id="top" className={`${styles.header} shadow-lg`}>
       <Navbar className={`${navbarClass} shadow-lg`} expand="lg" variant="dark">
-        <Container fluid>
-          <Navbar.Brand href="/">Christian Daum | Full Stack Developer</Navbar.Brand>
+        <Container fluid className="flex-wrap">
+          {/* <Navbar.Brand href="/">Christian Daum | Full Stack Developer</Navbar.Brand> */}
+          <Navbar.Brand
+            href="/"
+            className="d-flex flex-column align-items-start  justify-content-center flex-sm-row gap-sm-2 align-items-sm-center"
+          >
+            <span>Christian Daum</span>
+            <span className="d-none d-sm-block text-white-50"> | </span>
+            <span className={`${styles.navBrandSubhead} text-white-50`}>Full Stack Developer</span>
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">

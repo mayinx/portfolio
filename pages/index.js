@@ -152,7 +152,10 @@ export default function Index(props) {
                 </h4>
                 <ul className={`${styles.aboutTldrList} lead fw-500 text-light`}>
                   <li>Passionate about MERN- & Jamstack development.</li>
-                  <li>Currently working on Edmeda, a multi-community app for schools.</li>
+                  <li>
+                    Currently working on Edmeda, a multi-community app for schools with realtime
+                    group chats.
+                  </li>
                   <li>Background in Media Science & IT-Projectmanagement.</li>
                 </ul>
               </Col>

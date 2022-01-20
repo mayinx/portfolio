@@ -57,7 +57,7 @@ export const projects = {
       subhead: "Integrating with an API Backend ",
       imgUrl: "assets/rick-n-morty-on-steroids.vercel.app-8.png",
       description:
-        "Another fun weekend project for the neuefische-Bootcamp. And my first attempt to set something up like a 'Default React App Folder Structure' (work in progress). Notable features include: Pulling characters from teh Rick'N Morty-API, dynamic list filtering (per status, species, character name), snappy filter & search bar, pagination via a load more button to extend the current list, and not to forget: An incredibly (voluntarily) overdone scale effect on hover over the character cards, to 'increase the horror' - muahahaha... Takeaways: I learned that React-driven web development is blazing fast - and that a search for characters named 'Chris' or similar produced ...intersting results!",
+        "Another fun weekend project for the neuefische-Bootcamp. And my first attempt to set something up like a 'Default React App Folder Structure' (work in progress). Notable features include: Pulling characters from the Rick'N Morty-API, dynamic list filtering (per status, species, character name), snappy filter & search bar, pagination via a load more button to extend the current list, and not to forget: An incredibly (voluntarily) overdone scale effect on hover over the character cards, to 'increase the horror' - muahahaha... Takeaways: I learned that React-driven web development is blazing fast - and that a search for characters named 'Chris' or similar produced ...interesting results!",
       techStack: {
         Languages: ["JavaScript", "HTML5", "CSS3"],
         "Web Stack": ["React", "Create React App"],
@@ -81,7 +81,7 @@ export const projects = {
         More: ["React Bootstrap", "Vercel"],
       },
       provider: "Vercel",
-      siteUrl: "www.cdco.dev",
+      siteUrl: "https://cdco.dev/",
       repoUrl: "https://github.com/mayinx/portfolio",
     },
   ],

@@ -224,7 +224,7 @@ export default function Index(props) {
                     email="christian.daum@protonmail.com"
                     target="_blank"
                     role="button"
-                    tabindex="0"
+                    tabIndex="0"
                     headers={{
                       subject: "[Portfolio] ",
                     }}

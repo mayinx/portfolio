@@ -29,11 +29,11 @@ export default function ProjectCard(props) {
               {name} {""}
               <span className="text-muted blockquote-footer">{subhead}</span>
             </Card.Title>
-            <Card.Text className="text-mutedmb-4">{description}</Card.Text>
+            <Card.Text className="text-muted mb-4">{description}</Card.Text>
             {motivation && (
               <>
                 <h5>Motivation</h5>
-                <Card.Text className="text-mutedmb-4">{motivation}</Card.Text>
+                <Card.Text className="text-muted mb-4">{motivation}</Card.Text>
               </>
             )}
             <h5>Tech Stack</h5>
@@ -50,10 +50,10 @@ export default function ProjectCard(props) {
                         <h6 className="mb-1 mb-sm-0 text-black-50">{category}</h6>
                       </div>
                       <div className="col-12 col-sm-9 col-lg-6 d-flex flex-row flex-wrap gap-1 gap-sm-1 justify-content-end">
-                        {badges.map((badge) => {
+                        {badges.map((badge, idx) => {
                           return (
                             <>
-                              <Badge className="small" bg="secondary">
+                              <Badge key={idx} className="small" bg="secondary">
                                 {badge}
                               </Badge>
                             </>

@@ -20,6 +20,7 @@
   background-color: rgb(119 136 153 / 40%);
   padding: 1rem;
   transition: background-color 500ms linear;
+  z-index: 1000;
 }
 
 .navbar:hover {

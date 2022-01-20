@@ -172,9 +172,9 @@ export default function Index(props) {
                   <a href="#featured" className="link-info text-decoration-underline">
                     Edmeda
                   </a>
-                  , aiming to develop a web based solution that enables Schools to implicitly teach
+                  , aiming to develop a web based solution that enables schools to implicitly teach
                   important digital literacies through active practice of digital mediated social
-                  communication in community group chats.
+                  communication & collaboration in community group chats.
                 </p>
               </Col>
               <Col xs={12} lg={4}>
@@ -423,7 +423,13 @@ export default function Index(props) {
                             CSS Modules
                           </Badge>
                           <Badge className="medium-plus" bg="secondary">
+                            Git / GitHub
+                          </Badge>
+                          <Badge className="medium-plus" bg="secondary">
                             VS Code
+                          </Badge>
+                          <Badge className="medium-plus" bg="secondary">
+                            Linux (Ubuntu)
                           </Badge>
                         </div>
                       </ListGroup.Item>

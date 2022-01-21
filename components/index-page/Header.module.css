@@ -36,3 +36,11 @@
     font-size: inherit;
   }
 }
+
+/* :global(.nav-link) .nav-link {
+  color: red !important;
+  font-size: 3rem !important;
+} */
+/* ...CSS rules... */
+/* :global(.nav-link) .class2 {
+} */

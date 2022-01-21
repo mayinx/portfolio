@@ -10,7 +10,7 @@ export const projects = {
     techStack: {
       Languages: ["JavaScript", "HTML5", "CSS3"],
       "Web Stack": ["MongoDB (Mongoose)", "Express.js", "React", "Node.js"],
-      "CSS-Framework": ["None: 'Handcrafted'"],
+      "CSS-Framework": ["None / 'Handcrafted'"],
       More: [
         "Socket.IO",
         "JWT-Auth",
@@ -45,7 +45,7 @@ export const projects = {
       techStack: {
         Languages: ["JavaScript", "HTML5", "CSS3"],
         "Web Stack": ["React", "Create React App"],
-        "CSS-Framework": ["None: 'Handcrafted'"],
+        "CSS-Framework": ["None / 'Handcrafted'"],
         More: ["localStorage", "react-toastify", "react-select", "react-toastify", "Vercel"],
       },
       provider: "Vercel",
@@ -61,7 +61,7 @@ export const projects = {
       techStack: {
         Languages: ["JavaScript", "HTML5", "CSS3"],
         "Web Stack": ["React", "Create React App"],
-        "CSS-Framework": ["None: 'Handcrafted'"],
+        "CSS-Framework": ["None / 'Handcrafted'"],
         More: ["fetch", "api", "rick and morty", "localStorage", "Vercel"],
       },
       provider: "Vercel",

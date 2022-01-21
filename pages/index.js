@@ -10,8 +10,29 @@ import Badge from "react-bootstrap/Badge";
 import ListGroup from "react-bootstrap/ListGroup";
 import Button from "react-bootstrap/Button";
 
-import { BsGithub, BsLinkedin, BsStackOverflow, BsEnvelopeFill } from "react-icons/bs";
+import {
+  SiHeroku,
+  SiVercel,
+  SiVisualstudio,
+  SiSublimetext,
+  SiUbuntu,
+  SiFigma,
+  SiGimp,
+  SiBulma,
+  SiJson,
+  SiInkscape,
+  SiAdobephotoshop,
+} from "react-icons/si";
+
+import {
+  BsGithub,
+  BsLinkedin,
+  BsStackOverflow,
+  BsEnvelopeFill,
+  BsBootstrapFill,
+} from "react-icons/bs";
 import { FaXingSquare } from "react-icons/fa";
+import { VscWorkspaceUnknown } from "react-icons/vsc";
 
 import {
   ExpressOriginal,
@@ -26,9 +47,11 @@ import {
   DiMongodb,
   DiReact,
   DiNodejsSmall,
-  DiRubyRough,
+  DiGit,
+  DiSass,
   DiRuby,
   DiHtml5,
+  DiNodejs,
 } from "react-icons/di";
 
 import Image from "next/image";
@@ -46,6 +69,7 @@ const SkillIconComponents = {
   DiMongodb: DiMongodb,
   DiReact: DiReact,
   DiNodejsSmall: DiNodejsSmall,
+  DiNodejs: DiNodejs,
   DiRuby: DiRuby,
   JavascriptPlain: JavascriptPlain,
   DiHtml5: DiHtml5,
@@ -53,6 +77,22 @@ const SkillIconComponents = {
   RailsPlain: RailsPlain,
   JQueryPlain: JQueryPlain,
   PostgreSQLPlain: PostgreSQLPlain,
+  DiSass: DiSass,
+  BsBootstrapFill: BsBootstrapFill,
+  SiBulma: SiBulma,
+  DiGit: DiGit,
+  BsGithub: BsGithub,
+  SiHeroku: SiHeroku,
+  SiVercel: SiVercel,
+  SiVisualstudio: SiVisualstudio,
+  SiSublimetext: SiSublimetext,
+  SiUbuntu: SiUbuntu,
+  SiFigma: SiFigma,
+  SiGimp: SiGimp,
+  SiJson: SiJson,
+  SiAdobephotoshop: SiAdobephotoshop,
+  SiInkscape: SiInkscape,
+  VscWorkspaceUnknown: VscWorkspaceUnknown,
 };
 
 // export async function getStaticProps() {
@@ -381,7 +421,85 @@ export default function Index(props) {
               </Col>
             </Row>
 
-            {/*  5th About Skills TL;DR */}
+            {/*  5th About Skills CSS Frameworks + ... */}
+            <Row className="mt-auto gy-5">
+              <Col xs={12} lg={6} className="px-5">
+                <Row className="gy-3 ">
+                  <div className="dividerWithCaption">
+                    <span className="h5 fw-bold font-monospace">CSS FWs & PPs</span>
+                  </div>
+                </Row>
+                <Row className={styles.skillTiles}>
+                  {skills.css.map((skill, idx) => {
+                    return (
+                      <Col className={styles.skill} key={idx}>
+                        <div className={styles.skill__logo}>
+                          {/* <DiCss3 /> */}
+                          {typeof SkillIconComponents[skill.iconComponent] !== "undefined" &&
+                            React.createElement(SkillIconComponents[skill.iconComponent], {
+                              color: "#fff",
+                              size: "3rem",
+                            })}
+                        </div>
+                        <div className={styles.skill__name}>{skill.name}</div>
+                      </Col>
+                    );
+                  })}
+                </Row>
+              </Col>
+              <Col xs={12} lg={6} className="px-5">
+                <Row className="gy-3 ">
+                  <div className="dividerWithCaption">
+                    <span className="h5 fw-bold font-monospace">VC & Deployement</span>
+                  </div>
+                </Row>
+                <Row className={styles.skillTiles}>
+                  {skills.vcDeployement.map((skill, idx) => {
+                    return (
+                      <Col className={styles.skill} key={idx}>
+                        <div className={styles.skill__logo}>
+                          {typeof SkillIconComponents[skill.iconComponent] !== "undefined" &&
+                            React.createElement(SkillIconComponents[skill.iconComponent], {
+                              color: "#fff",
+                              size: "3rem",
+                            })}
+                        </div>
+                        <div className={styles.skill__name}>{skill.name}</div>
+                      </Col>
+                    );
+                  })}
+                </Row>
+              </Col>
+            </Row>
+
+            {/*  6th About Skills More + ... */}
+            <Row className="mt-auto gy-5">
+              <Col xs={12} className="px-5">
+                <Row className="gy-3 ">
+                  <div className="dividerWithCaption">
+                    <span className="h5 fw-bold font-monospace">More</span>
+                  </div>
+                </Row>
+                <Row className={styles.skillTiles}>
+                  {skills.more.map((skill, idx) => {
+                    return (
+                      <Col className={styles.skill} key={idx}>
+                        <div className={styles.skill__logo}>
+                          {typeof SkillIconComponents[skill.iconComponent] !== "undefined" &&
+                            React.createElement(SkillIconComponents[skill.iconComponent], {
+                              color: "#fff",
+                              size: "3rem",
+                            })}
+                        </div>
+                        <div className={styles.skill__name}>{skill.name}</div>
+                      </Col>
+                    );
+                  })}
+                </Row>
+              </Col>
+            </Row>
+
+            {/*  7th About Skills TL;DR */}
 
             <Row className="mt-5 gy-5 p-3 p-md-5">
               <Col xs={12} className="px-5">
@@ -426,6 +544,9 @@ export default function Index(props) {
                             CSS Modules
                           </Badge>
                           <Badge className="medium-plus" bg="secondary">
+                            npm
+                          </Badge>
+                          <Badge className="medium-plus" bg="secondary">
                             Git / GitHub
                           </Badge>
                           <Badge className="medium-plus" bg="secondary">
@@ -456,10 +577,19 @@ export default function Index(props) {
                             jQuery
                           </Badge>
                           <Badge className="medium-plus" bg="secondary">
+                            AJAX
+                          </Badge>
+                          <Badge className="medium-plus" bg="secondary">
                             PostgreSQL
                           </Badge>
                           <Badge className="medium-plus" bg="secondary">
-                            SCSS
+                            SQLite
+                          </Badge>
+                          <Badge className="medium-plus" bg="secondary">
+                            SASS (SCSS)
+                          </Badge>
+                          <Badge className="medium-plus" bg="secondary">
+                            RVM
                           </Badge>
                           <Badge className="medium-plus" bg="secondary">
                             Sublime Text
@@ -480,7 +610,10 @@ export default function Index(props) {
                             C++
                           </Badge>
                           <Badge className="medium-plus" bg="secondary">
-                            Qt
+                            Visual C++
+                          </Badge>
+                          <Badge className="medium-plus" bg="secondary">
+                            STL
                           </Badge>
                           <Badge className="medium-plus" bg="secondary">
                             MFC
@@ -489,10 +622,22 @@ export default function Index(props) {
                             DirectX
                           </Badge>
                           <Badge className="medium-plus" bg="secondary">
+                            Qt
+                          </Badge>
+                          <Badge className="medium-plus" bg="secondary">
+                            Visual Studio
+                          </Badge>
+                          <Badge className="medium-plus" bg="secondary">
                             VBA
                           </Badge>
                           <Badge className="medium-plus" bg="secondary">
                             Java
+                          </Badge>
+                          <Badge className="medium-plus" bg="secondary">
+                            Eclipse
+                          </Badge>
+                          <Badge className="medium-plus" bg="secondary">
+                            MS Windows
                           </Badge>
                         </div>
                       </ListGroup.Item>

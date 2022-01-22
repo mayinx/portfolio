@@ -82,7 +82,7 @@ export default function Index({ projects, skills }) {
               <Col className="text-center">
                 <h2 className={styles.sectionHead}>About me</h2>
                 <h3 className={`${styles.sectionSubhead} text-muted`}>
-                  I thought you&lsquo;d never asked.
+                  I thought you&lsquo;d never ask.
                 </h3>
               </Col>
             </Row>

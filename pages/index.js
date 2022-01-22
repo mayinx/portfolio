@@ -22,7 +22,13 @@ import {
   SiJson,
   SiInkscape,
   SiAdobephotoshop,
+  SiStylelint,
+  SiPrettier,
+  SiTrello,
+  SiWindows,
 } from "react-icons/si";
+
+import { AiFillSlackCircle } from "react-icons/ai";
 
 import {
   BsGithub,
@@ -52,6 +58,7 @@ import {
   DiRuby,
   DiHtml5,
   DiNodejs,
+  DiNpm,
 } from "react-icons/di";
 
 import Image from "next/image";
@@ -78,6 +85,7 @@ const SkillIconComponents = {
   JQueryPlain: JQueryPlain,
   PostgreSQLPlain: PostgreSQLPlain,
   DiSass: DiSass,
+  DiNpm: DiNpm,
   BsBootstrapFill: BsBootstrapFill,
   SiBulma: SiBulma,
   DiGit: DiGit,
@@ -92,6 +100,11 @@ const SkillIconComponents = {
   SiJson: SiJson,
   SiAdobephotoshop: SiAdobephotoshop,
   SiInkscape: SiInkscape,
+  SiStylelint: SiStylelint,
+  SiPrettier: SiPrettier,
+  SiTrello: SiTrello,
+  AiFillSlackCircle: AiFillSlackCircle,
+  SiWindows: SiWindows,
   VscWorkspaceUnknown: VscWorkspaceUnknown,
 };
 
@@ -282,40 +295,12 @@ export default function Index(props) {
         <section id="skills" className={styles.section + " " + styles.skillsSection}>
           <Container>
             {/*  Skills Header*/}
-
             <Row>
               <Col className="text-center">
                 <h2 className={styles.sectionHead}>Skills & Tools</h2>
                 <h3 className={`${styles.sectionSubhead} text-muted`}>What I&lsquo;m good at.</h3>
               </Col>
             </Row>
-
-            {/* <Row>
-              <Col xs={12} className="p-lg-5 d-flex flex-column align-items-center">
-                {" "}
-                <div className="d-flex gap-3">
-                  <div>
-                    <GiSkills size="3rem" />
-                  </div>
-                  <div>
-                    <h3 className="mb-3">Skills & Tools.</h3>
-                    <h5 style={{ color: "#d2d2d2 !important" }} className="mb-3 font-monospace">
-                      What I&lsquo;m good at.
-                    </h5>
-                  </div>
-                </div>
-                <div className="lead mt-5 pt-5 d-flex flex-column align-items-center">
-                  <h5>TL;DR:</h5>
-                  <ul>
-                    <li>MERN-Stack, Jamstack - current stacks</li>
-                    <li>Ruby on Rails, jQuery, PostgreSQL - a while back</li>
-                    <li>C++, VBA, Java - (way) back in the days, sigh</li>
-                    <li>...</li>
-                  </ul>
-                </div>
-              </Col>
-            </Row> */}
-
             {/*  3rd About Skills Languages + MERN Stack */}
             <Row className="mt-0 gy-5">
               <Col xs={12} lg={6} className="px-5">
@@ -368,7 +353,6 @@ export default function Index(props) {
                 </Row>
               </Col>
             </Row>
-
             {/*  4th About Skills Jamstack + Rails Stack */}
             <Row className="mt-auto gy-5">
               <Col xs={12} lg={6} className="px-5">
@@ -420,8 +404,7 @@ export default function Index(props) {
                 </Row>
               </Col>
             </Row>
-
-            {/*  5th About Skills CSS Frameworks + ... */}
+            {/*  5th About Skills CSS Frameworks + VC & Deployement */}
             <Row className="mt-auto gy-5">
               <Col xs={12} lg={6} className="px-5">
                 <Row className="gy-3 ">
@@ -472,12 +455,62 @@ export default function Index(props) {
               </Col>
             </Row>
 
-            {/*  6th About Skills More + ... */}
+            {/*  6th About Skills CSS Frameworks + VC & Deployement */}
+            <Row className="mt-auto gy-5">
+              <Col xs={12} lg={6} className="px-5">
+                <Row className="gy-3 ">
+                  <div className="dividerWithCaption">
+                    <span className="h5 fw-bold font-monospace">IDEs & CQ-Extensions</span>
+                  </div>
+                </Row>
+                <Row className={styles.skillTiles}>
+                  {skills.ide.map((skill, idx) => {
+                    return (
+                      <Col className={styles.skill} key={idx}>
+                        <div className={styles.skill__logo}>
+                          {typeof SkillIconComponents[skill.iconComponent] !== "undefined" &&
+                            React.createElement(SkillIconComponents[skill.iconComponent], {
+                              color: "#fff",
+                              size: "3rem",
+                            })}
+                        </div>
+                        <div className={styles.skill__name}>{skill.name}</div>
+                      </Col>
+                    );
+                  })}
+                </Row>
+              </Col>
+              <Col xs={12} lg={6} className="px-5">
+                <Row className="gy-3 ">
+                  <div className="dividerWithCaption">
+                    <span className="h5 fw-bold font-monospace">Team Collaboration</span>
+                  </div>
+                </Row>
+                <Row className={styles.skillTiles}>
+                  {skills.team.map((skill, idx) => {
+                    return (
+                      <Col className={styles.skill} key={idx}>
+                        <div className={styles.skill__logo}>
+                          {typeof SkillIconComponents[skill.iconComponent] !== "undefined" &&
+                            React.createElement(SkillIconComponents[skill.iconComponent], {
+                              color: "#fff",
+                              size: "3rem",
+                            })}
+                        </div>
+                        <div className={styles.skill__name}>{skill.name}</div>
+                      </Col>
+                    );
+                  })}
+                </Row>
+              </Col>
+            </Row>
+
+            {/*  7th About Skills More + ... */}
             <Row className="mt-auto gy-5">
               <Col xs={12} className="px-5">
                 <Row className="gy-3 ">
                   <div className="dividerWithCaption">
-                    <span className="h5 fw-bold font-monospace">More</span>
+                    <span className="h5 fw-bold font-monospace">theUnruly(...rest)</span>
                   </div>
                 </Row>
                 <Row className={styles.skillTiles}>
@@ -498,9 +531,7 @@ export default function Index(props) {
                 </Row>
               </Col>
             </Row>
-
             {/*  7th About Skills TL;DR */}
-
             <Row className="mt-5 gy-5 p-3 p-md-5">
               <Col xs={12} className="px-5">
                 <Row className="gy-3 ">

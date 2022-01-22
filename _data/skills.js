@@ -1,13 +1,19 @@
 export const skills = {
   // Languages
+  // TODO: alt "Programming"
   languages: [
     { name: "JavaScript", iconComponent: "JavascriptPlain" },
     { name: "Ruby", iconComponent: "DiRuby" },
+    { name: "C++", iconComponent: "SiCplusplus" },
+    { name: "VBA", iconComponent: "VscWorkspaceUnknown" },
     { name: "HTML5", iconComponent: "DiHtml5" },
     { name: "CSS3", iconComponent: "DiCss3" },
   ],
+
   // Web Stacks:
   // MERN-Stack
+
+  // TODO: add mongoose
   webStacks: {
     // TODO: On hover display something like: "MERN stack is a web development framework. It consists of MongoDB, ExpressJS, ReactJS, and NodeJS as its working components. ..."
     mern: [
@@ -17,6 +23,11 @@ export const skills = {
         iconComponent: "DiMongodb",
         description:
           "MongoDB: A document-oriented, No-SQL database used to store application data.",
+      },
+      {
+        name: "Mongoose",
+        iconComponent: "VscWorkspaceUnknown",
+        description: "",
       },
       {
         name: "Express.js",
@@ -53,20 +64,20 @@ export const skills = {
     ],
   },
 
-  // CSS-Fw and preprocessors
+  // CSS-Fw, preprocessors + standards
   css: [
     { name: "Bootstrap", iconComponent: "BsBootstrapFill" },
     { name: "Bulma", iconComponent: "SiBulma" },
     { name: "SASS (SCSS)", iconComponent: "DiSass" },
     { name: "CSS Modules", iconComponent: "VscWorkspaceUnknown" },
+    { name: "BEM", iconComponent: "VscWorkspaceUnknown" },
   ],
 
-  // Deployment
-  vcDeployement: [
-    { name: "Git", iconComponent: "DiGit" },
-    { name: "GitHub", iconComponent: "BsGithub" },
+  // Platforms:
+  platforms: [
     { name: "Heroku", iconComponent: "SiHeroku" },
     { name: "Vercel", iconComponent: "SiVercel" },
+    { name: "AWS (S3)", iconComponent: "SiAmazonaws" },
   ],
 
   // // Team Communication & Collaboration
@@ -83,12 +94,16 @@ export const skills = {
     { name: "Sublime Text", iconComponent: "SiSublimetext" },
     { name: "StyleLint", iconComponent: "SiStylelint" },
     { name: "Prettier", iconComponent: "SiPrettier" },
-    { name: "JSHint", iconComponent: "VscWorkspaceUnknown" },
     { name: "ESLint", iconComponent: "VscWorkspaceUnknown" },
+    { name: "JSHint", iconComponent: "VscWorkspaceUnknown" },
   ],
 
   more: [
+    { name: "Git", iconComponent: "DiGit" },
+    { name: "GitHub", iconComponent: "BsGithub" },
+    { name: "Bash", iconComponent: "VscTerminalBash" },
     { name: "JSON", iconComponent: "SiJson" },
+    { name: "Socket.IO", iconComponent: "SiSocketdotio" },
     { name: "Excalidraw", iconComponent: "VscWorkspaceUnknown" },
     { name: "Figma", iconComponent: "SiFigma" },
     { name: "Gimp", iconComponent: "SiGimp" },

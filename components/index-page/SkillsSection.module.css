@@ -1,0 +1,107 @@
+.skillsSection {
+  background-color: #8b99a7;
+  color: white;
+}
+
+
+
+.skillsSection .sectionSubhead {
+  color: #d2d2d2 !important;
+}
+
+.skillsSection .sectionHead {
+  color: white !important;
+}
+
+
+.aboutTldrList {
+  padding-left: 0;
+  list-style: none;
+  text-align: center;
+}
+
+/* large - lg */
+@media screen and (min-width: 992px) {
+  .aboutTldrList {
+    text-align: start;
+    padding-left: 2rem;
+    list-style-type: disc;
+    list-style-image: none;
+    list-style-position: outside;
+  }
+}
+
+
+
+.skillTiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 8rem);
+  grid-auto-rows: 8rem;
+  justify-content: space-around;
+  padding: 0.25rem;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill__logo {
+  font-size: 3rem;
+}
+.skill__name {
+  font-size: 1.25rem;
+  white-space: nowrap;
+}
+
+.tldrListGroup {
+  background-color: #c2d9f0;
+  border-radius: 10px;
+}
+.tldrListGroup li {
+  background-color: whitesmoke;
+  padding: 1.5rem 1rem;
+}
+
+.tldrListItemCurrent h6 {
+  font-weight: 700;
+}
+
+.tldrListGroup li span {
+  min-width: 60%;
+  min-width: 150px;
+}
+
+/* small - sm */
+@media screen and (min-width: 576px) {
+  .tldrListGroup li span {
+    min-width: auto;
+  }
+}
+
+.tldrListItemCurrent span {
+  background-color: #62707f !important;
+}
+
+.tldrListItemWhileBack h6 {
+  /* color: #1a4066; */
+  font-weight: 700;
+}
+
+.tldrListItemWhileBack span {
+  background-color: #758595 !important;
+}
+
+.tldrListItemWayBack h6 {
+  /* color: #1a4066; */
+  font-weight: 700;
+}
+
+.tldrListItemWayBack span {
+  /* background-color: #1a4066;
+  background-color: rgb(26 64 102 / 55%); */
+  /* background-color: rgba(108, 117, 125, 0.75) !important; */
+  background-color: #8c99a6 !important;
+}

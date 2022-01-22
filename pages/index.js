@@ -109,7 +109,7 @@ export default function Index({ projects, skills }) {
                 className="p-lg-4 mt-lg-0 d-flex flex-column justify-content-center align-items-center align-items-lg-start"
               >
                 {" "}
-                <h1 className="mb-3 text-center text-lg-start">Chris here.</h1>
+                <h3 className="mb-3 text-center text-lg-start">Chris here.</h3>
                 <h4
                   style={{ color: "#d2d2d2 !important" }}
                   className="mb-3 text-center text-lg-start"

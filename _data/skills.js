@@ -64,7 +64,7 @@ export const skills = {
     ],
   },
 
-  // CSS-Fw, preprocessors + standards
+  // CSS Frameworks & Tooling CSS-Fw, preprocessors + standards + tools
   css: [
     { name: "Bootstrap", iconComponent: "BsBootstrapFill" },
     { name: "Bulma", iconComponent: "SiBulma" },

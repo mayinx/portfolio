@@ -220,7 +220,7 @@ export default function SkillsSection({ sectionBaseStyle, skills }) {
           <Col xs={12} lg={6} className="px-5">
             <Row className="gy-3 ">
               <div className="dividerWithCaption">
-                <span className="h5 fw-bold font-monospace">CSS FWs & PPs</span>
+                <span className="h5 fw-bold font-monospace">CSS-Frameworks & Tooling</span>
               </div>
             </Row>
             <Row className={styles.skillTiles}>

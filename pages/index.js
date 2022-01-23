@@ -216,7 +216,7 @@ export default function Index({ projects, skills }) {
                 <use xlinkHref="#bootstrap" />
               </svg>
             </a> */}
-            <span className="text-muted">&copy; 2021 Christian Daum</span>
+            <span className="text-muted">&copy; 2022 Christian Daum</span>
           </div>
 
           <ul className="nav col-12 col-md-5 justify-content-center justify-content-md-end list-unstyled d-flex">

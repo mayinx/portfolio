@@ -4,6 +4,10 @@ import Nav from "react-bootstrap/Nav";
 
 import Container from "react-bootstrap/Container";
 
+import { FaUnsplash } from "react-icons/fa";
+
+import { MdAttribution } from "react-icons/md";
+
 // import "./Header.module.css";
 import styles from "./Header.module.scss";
 
@@ -56,7 +60,6 @@ export default function Header() {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-
       <div className={styles.headerOverlay}>
         <div className="d-flex text-end">
           <div className="text-white">
@@ -68,6 +71,27 @@ export default function Header() {
             </a>
           </div>
         </div>
+      </div>
+
+      <div className={styles.headerPicAttribution}>
+        <span>Photo by&nbsp;</span>
+        <a
+          className="link-light"
+          target="_blank"
+          href="https://unsplash.com/@xps?utm_source=cdco.dev&utm_medium=referral"
+          rel="noreferrer"
+        >
+          <MdAttribution /> <span>XPS</span>
+        </a>
+        <span>&nbsp;/&nbsp;</span>
+        <a
+          className="link-light"
+          target="_blank"
+          href="https://unsplash.com/?utm_source=cdco.dev&utm_medium=referral"
+          rel="noreferrer"
+        >
+          <FaUnsplash /> <span>Unsplash</span>
+        </a>
       </div>
     </header>
   );

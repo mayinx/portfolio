@@ -1,4 +1,5 @@
-import { useScrollHandler } from "../hooks/useScrollHandler";
+// import { useScrollHandler } from "../hooks/useScrollHandler";
+
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 
@@ -39,19 +40,19 @@ export default function Header() {
             <span className="d-none d-sm-block text-white-50"> | </span>
             <span className={`${styles.navBrandSubhead} text-white-50`}>Full Stack Developer</span>
           </Navbar.Brand>
-          <Navbar.Toggle class={styles.navToggler} aria-controls="basic-navbar-nav" />
+          <Navbar.Toggle className={styles.navToggler} aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
-              <Nav.Link class={styles.navLink} href="/">
+              <Nav.Link className={styles.navLink} href="/">
                 Start
               </Nav.Link>
-              <Nav.Link class={styles.navLink} href="#featured">
+              <Nav.Link className={styles.navLink} href="#featured">
                 Projects
               </Nav.Link>
-              <Nav.Link class={styles.navLink} href="#about">
+              <Nav.Link className={styles.navLink} href="#about">
                 About
               </Nav.Link>
-              <Nav.Link class={styles.navLink} href="#skills">
+              <Nav.Link className={styles.navLink} href="#skills">
                 Skills & Tools
               </Nav.Link>
               {/* <Nav.Link href="#upcoming">Upcoming</Nav.Link> */}

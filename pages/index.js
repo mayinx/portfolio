@@ -8,7 +8,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 
-import { BsGithub, BsLinkedin, BsStackOverflow, BsEnvelopeFill } from "react-icons/bs";
+import { BsGithub, BsLinkedin, BsEnvelopeFill } from "react-icons/bs";
 import { FaXingSquare } from "react-icons/fa";
 
 import Image from "next/image";
@@ -19,7 +19,8 @@ import SkillsSection from "../components/index-page/SkillsSection";
 import { projects } from "../_data/projects";
 import { skills } from "../_data/skills";
 
-import Header from "../components/index-page/Header";
+import Header from "../components/layout/Header";
+import Footer from "../components/layout/Footer";
 
 // export async function getStaticProps() {
 export function getStaticProps() {
@@ -208,57 +209,7 @@ export default function Index({ projects, skills }) {
         <SkillsSection sectionBaseStyle={styles.section} skills={skills} />
       </main>
 
-      <div className="container">
-        <footer className="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 gap-3 border-top">
-          <div className="col-12 col-md-5 d-flex justify-content-center justify-content-md-start align-items-center">
-            {/* <a href="/" className="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
-              <svg className="bi" width="30" height="24">
-                <use xlinkHref="#bootstrap" />
-              </svg>
-            </a> */}
-            <span className="text-muted">&copy; 2022 Christian Daum</span>
-          </div>
-
-          <ul className="nav col-12 col-md-5 justify-content-center justify-content-md-end list-unstyled d-flex">
-            <li className="ms-3">
-              <a className="text-muted" href="https://github.com/mayinx">
-                <BsGithub size="2rem" />
-              </a>
-            </li>
-            <li className="ms-3">
-              <a
-                className="text-muted"
-                href="https://www.linkedin.com/in/christian-daum-4397a021a/"
-              >
-                <BsLinkedin size="2rem" />
-              </a>
-            </li>
-            <li className="ms-3">
-              <a className="text-muted" href="https://www.xing.com/profile/Christian_Daum33/">
-                <FaXingSquare size="2rem" />
-              </a>
-            </li>
-
-            <li className="ms-3">
-              <Obfuscate
-                className="text-muted"
-                email="christian.daum@protonmail.com"
-                target="_blank"
-                headers={{
-                  subject: "[Portfolio] ",
-                }}
-              >
-                <BsEnvelopeFill size="2rem" />
-              </Obfuscate>
-            </li>
-            <li className="ms-3">
-              <a className="text-muted" href="https://stackoverflow.com/users/664333/mayinx">
-                <BsStackOverflow size="2rem" />
-              </a>
-            </li>
-          </ul>
-        </footer>
-      </div>
+      <Footer />
     </>
   );
 }

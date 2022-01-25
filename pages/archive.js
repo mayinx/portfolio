@@ -18,7 +18,7 @@ export function getStaticProps() {
 
 export default function Archive() {
   return (
-    <PageLayout>
+    <PageLayout pageName="Ancient Archives">
       <section id="more" className={styles.section + " " + styles.moreSection}>
         <Container>
           <Row>

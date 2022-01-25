@@ -31,7 +31,7 @@ export function getStaticProps() {
 //  export default function start
 export default function Index({ projects, skills }) {
   return (
-    <IndexLayout pageTitle="Start">
+    <IndexLayout pageName="Start">
       <section id="featured" className={styles.section + " " + styles.currentSection}>
         <Container>
           <Row>

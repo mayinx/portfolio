@@ -13,11 +13,13 @@ import { FaXingSquare } from "react-icons/fa";
 
 import Image from "next/image";
 
-import ProjectCard from "../components/index-page/ProjectCard";
+import ProjectCard from "../components/shared/ProjectCard";
 import SkillsSection from "../components/index-page/SkillsSection";
 
 import { projects } from "../_data/projects";
 import { skills } from "../_data/skills";
+
+import IndexLayout from "../components/IndexLayout";
 
 // export async function getStaticProps() {
 export function getStaticProps() {
@@ -29,7 +31,7 @@ export function getStaticProps() {
 //  export default function start
 export default function Index({ projects, skills }) {
   return (
-    <>
+    <IndexLayout pageTitle="Start">
       <section id="featured" className={styles.section + " " + styles.currentSection}>
         <Container>
           <Row>
@@ -201,6 +203,6 @@ export default function Index({ projects, skills }) {
 
       {/*  Skills */}
       <SkillsSection sectionBaseStyle={styles.section} skills={skills} />
-    </>
+    </IndexLayout>
   );
 }

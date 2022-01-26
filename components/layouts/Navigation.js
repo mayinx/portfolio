@@ -4,6 +4,8 @@ import Container from "react-bootstrap/Container";
 
 import styles from "./Navigation.module.scss";
 
+import { BiMenu } from "react-icons/bi";
+
 export default function Navigation() {
   // FYI: Necessary check to ensure that the window object (and thus 'document') is loaded and available
   // - otherwise Next.js throws an error claiming that 'document' is undefined - amd putting this inside
@@ -31,9 +33,12 @@ export default function Navigation() {
           <span className="d-none d-sm-block text-white-50"> | </span>
           <span className={`${styles.navBrandSubhead} text-white-50`}>Full Stack Developer</span>
         </Navbar.Brand>
-        <Navbar.Toggle className={styles.navToggler} aria-controls="basic-navbar-nav" />
+        <Navbar.Toggle className={styles.navbarToggler} aria-controls="basic-navbar-nav">
+          <span className={`${styles.navbarTogglerIcon} navbar-toggler-icon`}></span>
+          {/* <BiMenu className={`${styles.navbarTogglerIcon} navbar-toggler-icon`} /> */}
+        </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ms-auto">
+          <Nav className={`${styles.nav} ms-auto`}>
             <Nav.Link className={styles.navLink} href="/">
               Start
             </Nav.Link>

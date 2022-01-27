@@ -2,6 +2,9 @@
 $white: #fff !default;
 $navbar-color: rgba($white, 0.55) !default;
 $navbar-hover-color: rgba($white, 0.75) !default;
+$navbar-hover-bg-color: rgb(119 136 153 / 95%);
+$navbar-navlink-hover-color: rgba($white, 0.75) !default;
+$navbar-navlink-hover-bg-color: #7d8d9b;
 $navbar-active-color: $white !default;
 $navbar-disabled-color: rgba($white, 0.25) !default;
 $navbar-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$navbar-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !default;
@@ -9,6 +12,10 @@ $navbar-toggler-border-color: rgba($white, 0.1) !default;
 
 $navbar-brand-color: $navbar-active-color !default;
 $navbar-brand-hover-color: $navbar-active-color !default;
+
+:global(.navbar-dark):global(.navbar-nav):global(.nav-link).active {
+  color: red;
+}
 
 .navbar {
   background-color: rgb(119 136 153 / 40%);
@@ -18,7 +25,9 @@ $navbar-brand-hover-color: $navbar-active-color !default;
 
   &:hover {
     // background-color: rgb(119 136 153 / 90%);
-    background-color: rgb(119 136 153 / 95%);
+    // background-color: rgb(119 136 153 / 95%);
+
+    background-color: $navbar-hover-bg-color;
   }
 
   .navBrand {
@@ -37,22 +46,45 @@ $navbar-brand-hover-color: $navbar-active-color !default;
   }
 
   .nav {
+    padding: 1rem 0;
+
     .navLink {
       color: $navbar-color;
+      border-radius: 0.5rem;
+      padding: 0.5rem 1rem;
+      border: 1px solid transparent;
 
       &:hover,
       &:focus {
-        color: $navbar-hover-color;
+        color: $navbar-navlink-hover-color;
+        background-color: $navbar-navlink-hover-bg-color;
+        border: 1px solid darken($navbar-navlink-hover-bg-color, 1);
       }
 
       &.disabled {
         color: $navbar-disabled-color;
       }
+
+      .active {
+        color: red !important;
+      }
+      &.active {
+        color: red !important;
+      }
+      *.active {
+        color: red !important;
+      }
+    }
+
+    .navLinkActive {
+      color: $navbar-active-color;
+      color: red !important;
     }
 
     .show > .navLink,
     .navLink.active {
       color: $navbar-active-color;
+      color: red !important;
     }
   }
 
@@ -81,6 +113,18 @@ $navbar-brand-hover-color: $navbar-active-color !default;
     .navBrand {
       .navBrandSubhead {
         font-size: inherit;
+      }
+    }
+  }
+}
+@media all and (min-width: 992px) {
+  .navbar {
+    .nav {
+      padding: 0;
+      .navLink {
+        color: $navbar-color;
+        border-radius: 0.5rem;
+        padding: 0.5rem 1rem;
       }
     }
   }

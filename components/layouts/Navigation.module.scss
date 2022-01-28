@@ -1,10 +1,14 @@
 // scss-docs-start navbar-theme-variables
 $white: #fff !default;
 $navbar-color: rgba($white, 0.55) !default;
-$navbar-hover-color: rgba($white, 0.75) !default;
+// $navbar-hover-color: rgba($white, 0.75) !default;
+$navbar-hover-color: whitesmoke !default;
 $navbar-hover-bg-color: rgb(119 136 153 / 95%);
-$navbar-navlink-hover-color: rgba($white, 0.75) !default;
-$navbar-navlink-hover-bg-color: #7d8d9b;
+// $navbar-navlink-hover-color: rgba($white, 0.75) !default;
+$navbar-navlink-hover-color: whitesmoke !default;
+// $navbar-navlink-hover-bg-color: #7d8d9b;
+$navbar-navlink-hover-bg-color: #5c738b;
+// $navbar-navlink-hover-bg-color: #67727d;
 $navbar-active-color: $white !default;
 $navbar-disabled-color: rgba($white, 0.25) !default;
 $navbar-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$navbar-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !default;
@@ -13,22 +17,19 @@ $navbar-toggler-border-color: rgba($white, 0.1) !default;
 $navbar-brand-color: $navbar-active-color !default;
 $navbar-brand-hover-color: $navbar-active-color !default;
 
-:global(.navbar-dark):global(.navbar-nav):global(.nav-link).active {
-  color: red;
+// TODO: Find a way to customize the react-bootstrap classes for active nav-elements etc.
+// Until then: global it is
+.navbar:hover :global(.navbar-nav) :global(.active) {
+  color: $navbar-navlink-hover-color !important;
+  background-color: $navbar-navlink-hover-bg-color !important;
+  border: 1px solid darken($navbar-navlink-hover-bg-color, 5%) !important;
 }
 
 .navbar {
   background-color: rgb(119 136 153 / 40%);
   padding: 1rem;
-  transition: background-color 500ms linear;
+  transition: background-color 0.3s linear;
   z-index: 1000;
-
-  &:hover {
-    // background-color: rgb(119 136 153 / 90%);
-    // background-color: rgb(119 136 153 / 95%);
-
-    background-color: $navbar-hover-bg-color;
-  }
 
   .navBrand {
     color: $navbar-brand-color;
@@ -47,47 +48,51 @@ $navbar-brand-hover-color: $navbar-active-color !default;
 
   .nav {
     padding: 1rem 0;
+    gap: 0.5rem;
 
     .navLink {
       color: $navbar-color;
       border-radius: 0.5rem;
-      padding: 0.5rem 1rem;
+      padding: 0.75rem 1.25rem;
       border: 1px solid transparent;
+      transition-property: background-color, color;
+      transition-timing-function: ease;
+      transition-duration: 0.35s;
 
       &:hover,
       &:focus {
         color: $navbar-navlink-hover-color;
         background-color: $navbar-navlink-hover-bg-color;
-        border: 1px solid darken($navbar-navlink-hover-bg-color, 1);
+        border: 1px solid darken($navbar-navlink-hover-bg-color, 5%);
       }
 
       &.disabled {
         color: $navbar-disabled-color;
       }
-
-      .active {
-        color: red !important;
-      }
-      &.active {
-        color: red !important;
-      }
-      *.active {
-        color: red !important;
-      }
     }
 
-    .navLinkActive {
-      color: $navbar-active-color;
-      color: red !important;
-    }
+    // .navLinkActive {
+    //   color: $navbar-active-color;
+    // }
 
     .show > .navLink,
     .navLink.active {
       color: $navbar-active-color;
-      color: red !important;
     }
   }
 
+  &:hover {
+    // background-color: rgb(119 136 153 / 90%);
+    // background-color: rgb(119 136 153 / 95%);
+
+    background-color: $navbar-hover-bg-color;
+
+    .nav {
+      .navLink {
+        color: $navbar-hover-color;
+      }
+    }
+  }
   .navbarToggler {
     color: $navbar-color;
     border-color: $navbar-toggler-border-color;

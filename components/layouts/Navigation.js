@@ -22,7 +22,7 @@ export default function Navigation() {
   const navbarClass = !scroll ? `${styles.navbar}` : `${styles.navbar} ${styles.navbarSticky}`;
 
   return (
-    <Navbar className={`${navbarClass} shadow-lg`} expand="lg" variant="dark">
+    <Navbar collapseOnSelect className={`${navbarClass} shadow-lg`} expand="lg" variant="dark">
       <Container fluid className="flex-wrap">
         {/* <Navbar.Brand href="/">Christian Daum | Full Stack Developer</Navbar.Brand> */}
         <Navbar.Brand

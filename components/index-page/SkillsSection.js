@@ -28,6 +28,7 @@ import {
   SiAmazonaws,
   SiCplusplus,
   SiSocketdotio,
+  SiCypress,
 } from "react-icons/si";
 
 import { AiFillSlackCircle } from "react-icons/ai";
@@ -95,6 +96,7 @@ const SkillIconComponents = {
   SiAmazonaws: SiAmazonaws,
   SiCplusplus: SiCplusplus,
   SiSocketdotio: SiSocketdotio,
+  SiCypress: SiCypress,
   VscTerminalBash: VscTerminalBash,
   VscWorkspaceUnknown: VscWorkspaceUnknown,
 };
@@ -374,6 +376,9 @@ export default function SkillsSection({ sectionBaseStyle, skills }) {
                         CSS3
                       </Badge>
                       <Badge className="medium-plus" bg="secondary">
+                        SASS (SCSS)
+                      </Badge>
+                      <Badge className="medium-plus" bg="secondary">
                         MERN-Stack
                       </Badge>
                       <Badge className="medium-plus" bg="secondary">
@@ -383,10 +388,13 @@ export default function SkillsSection({ sectionBaseStyle, skills }) {
                         Bootstrap
                       </Badge>
                       <Badge className="medium-plus" bg="secondary">
-                        CSS Modules
+                        (S)CSS Modules
                       </Badge>
                       <Badge className="medium-plus" bg="secondary">
                         npm
+                      </Badge>
+                      <Badge className="medium-plus" bg="secondary">
+                        Cypress.io
                       </Badge>
                       <Badge className="medium-plus" bg="secondary">
                         Git / GitHub

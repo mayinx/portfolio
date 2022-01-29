@@ -69,7 +69,7 @@ export const skills = {
     { name: "Bootstrap", iconComponent: "BsBootstrapFill" },
     { name: "Bulma", iconComponent: "SiBulma" },
     { name: "SASS (SCSS)", iconComponent: "DiSass" },
-    { name: "CSS Modules", iconComponent: "VscWorkspaceUnknown" },
+    { name: "(S)CSS Modules", iconComponent: "VscWorkspaceUnknown" },
     { name: "BEM", iconComponent: "VscWorkspaceUnknown" },
   ],
 
@@ -99,11 +99,12 @@ export const skills = {
   ],
 
   more: [
+    { name: "Cypress.io", iconComponent: "SiCypress" },
     { name: "Git", iconComponent: "DiGit" },
     { name: "GitHub", iconComponent: "BsGithub" },
     { name: "Bash", iconComponent: "VscTerminalBash" },
-    { name: "JSON", iconComponent: "SiJson" },
     { name: "Socket.IO", iconComponent: "SiSocketdotio" },
+    { name: "JSON", iconComponent: "SiJson" },
     { name: "Excalidraw", iconComponent: "VscWorkspaceUnknown" },
     { name: "Figma", iconComponent: "SiFigma" },
     { name: "Gimp", iconComponent: "SiGimp" },

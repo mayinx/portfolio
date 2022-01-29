@@ -21,6 +21,7 @@ export const projects = {
         "Axios",
         "Gender Detection",
         "Faker",
+        "Cypress.io",
         "Heroku",
       ],
     },
@@ -75,9 +76,9 @@ export const projects = {
       description:
         "... aka 'The Minimalistic Hire Me Portfolio One Page Wonder'... Since I was really eager to get my hands on Jamstack with Next.js anyway this was the perfect opportunity for a dive into this awesome web development stack. Plus: 'One must show that one masters (React)Bootstrap and can create a fancy landing page of sorts'. Anyway: Can't wait to pull in Github- and whatnot-stats via the respective APIs - or to explore headless CMS while adding a blog...",
       techStack: {
-        Languages: ["JavaScript", "HTML5", "CSS3"],
+        Languages: ["JavaScript", "HTML5", "CSS3", "SASS (SCSS)"],
         "Web Stack": ["React", "Next.js"],
-        "CSS-Framework": ["Bootstrap 5"],
+        "CSS-Framework & -Tooling": ["Bootstrap 5", "(S)CSS-Modules"],
         More: ["React Bootstrap", "Vercel"],
       },
       provider: "Vercel",

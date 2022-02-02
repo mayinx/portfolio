@@ -34,7 +34,7 @@ export const archivedProjects = {
       subhead: "Community Photo Blogging Platform",
       imgUrl: "assets/todoapp-react-three.vercel.app1.png",
       description:
-        "... - first steps in Rails, my community photo blog I created during and after my new zealand travels as an university project ... ",
+        "... - first steps in Rails: My community photo blog I created during and after my Zew Zealand travels as an university project...",
       techStack: {
         Languages: ["Ruby", "JavaScript", "HTML5", "CSS3"],
         "Web Stack": ["Ruby on Rails", "PostgreSQL", "jQuery"],
@@ -50,12 +50,20 @@ export const archivedProjects = {
       subhead: "Customer Relationship Management App",
       imgUrl: "assets/rick-n-morty-on-steroids.vercel.app-8.png",
       description:
-        "  Konzeption und Realisierung einer Customer Relationship Management Lösung für eine Unternehmensberatung  zur unternehmensinternen Nutzung inkl. Task- und Protokollmanagement - internes Projekt – keine url verfügbar - projects i did for a company that I can't make public - I mean: It's their code",
+        "Konzeption und Realisierung einer Customer Relationship Management Lösung für eine Unternehmensberatung zur unternehmensinternen Nutzung inkl. Task- und Protokollmanagement - url: xcrm.heroku.com",
       techStack: {
         Languages: ["Ruby", "JavaScript", "HTML5", "CSS3"],
-        "Web Stack": ["Ruby on Rails", "PostgreSQL", "jQuery"],
+        "Web Stack": ["Ruby on Rails", "PostgreSQL", "jQuery", "AJAX"],
         "CSS-Framework": ["None / 'Handcrafted'"],
-        More: ["JSON", "rmagick", "AWS-S3", "Heroku"],
+        More: [
+          "Google Apps",
+          "SingleSignOn via OpenID",
+          "OAuth",
+          "Selenium",
+          "rmagick",
+          "AWS-S3",
+          "Heroku",
+        ],
       },
       provider: "Heroku",
       siteUrl: "#",
@@ -66,7 +74,7 @@ export const archivedProjects = {
       subhead: "Time Tracking App",
       imgUrl: "assets/portfolio-app-1.png",
       description:
-        " Time-Tracking-Tool mit GoogleApps/AppEmgine-Intergration via OpenID und Oauth auf Heroku gehosted – aber mit GoogleApps-Business-integration, so dass Google-basierter SingleSign-on Zugriff und API-Zugriff auf Google-Business-Daten der Anwender möglich war (Dokumente, Kontakte, Kalender etc.)- internes Projekt – keine url verfügbar",
+        " Time-Tracking-Tool mit GoogleApps/AppEmgine-Intergration via OpenID und Oauth auf Heroku gehosted – aber mit GoogleApps-Business-integration, so dass Google-basierter SingleSign-on Zugriff und API-Zugriff auf Google-Business-Daten der Anwender möglich war (Dokumente, Kontakte, Kalender etc.)- internes Projekt –  url: xcte.heroku.com",
       techStack: {
         Languages: ["Ruby", "JavaScript", "HTML5", "CSS3"],
         "Web Stack": ["Ruby on Rails", "PostgreSQL", "jQuery"],
@@ -82,7 +90,7 @@ export const archivedProjects = {
       subhead: "Social Web Simulation for Schools",
       imgUrl: "assets/portfolio-app-1.png",
       description:
-        "... Entwicklung und Erprobung einer Social Web App für eine Kölner Grunschule (GGS Anna Langohr in Heimersdorf) zur Vermittlung grundlegender Kompetenzen in den Bereichen Internet und Social Web - bestehend aus Wiki, Blog, User Messaging, Social Networkinng, Mediathek -  mit den üblichen CommunityFeatures wie Tagging, Commenting + Voting -  quasi eine schulinterne SocialWeb Simulation – die Schulen ermöglichen soll, in einem sicheren + PW-geschützten Umfeld die Praktiken des Social Web einzuüben -  begonnen als praktische Teil einer Examensarbeit einer Grundschullehrerin an besagter Schule - danach im Rahmen mehrerer AGs eingesetzt und weiter ausgebaut - auch im Rahmen der Pilotphase des Medienpass NRW (Initiative der Landesregierung zur Förderung der Vermittlung von Medienkompetenz an Grundschulen), an welcher die Schule als Pilotschule teilnahm -  Uralter Prototyp läuft noch immer (aber inzwischen ungenutzt, da die treibende Lehrkraft die Schule inzwischen verlassen hat) unter: https://ggs-anna-langohr.ourschoolnet.de/",
+        "... Entwicklung und Erprobung einer Social Web App für eine Kölner Grunschule (GGS Anna Langohr in Heimersdorf) zur Vermittlung grundlegender Kompetenzen in den Bereichen Internet und Social Web - bestehend aus Wiki, Blog, User Messaging, Social Networking, Mediathek -  mit den üblichen CommunityFeatures wie Tagging, Commenting + Voting -  quasi eine schulinterne SocialWeb Simulation – die Schulen ermöglichen soll, in einem sicheren + PW-geschützten Umfeld die Praktiken des Social Web einzuüben -  begonnen als praktischer Teil einer Examensarbeit einer Grundschullehrerin an besagter Schule - danach im Rahmen mehrerer AGs eingesetzt und weiter ausgebaut - auch im Rahmen der Pilotphase des Medienpass NRW (Initiative der Landesregierung zur Förderung der Vermittlung von Medienkompetenz an Schulen), an welcher die Schule als Pilotschule teilnahm...",
       techStack: {
         Languages: ["Ruby", "JavaScript", "HTML5", "CSS3"],
         "Web Stack": ["Ruby on Rails", "PostgreSQL", "jQuery"],

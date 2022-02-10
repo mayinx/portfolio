@@ -99,6 +99,7 @@ export const skills = {
   ],
 
   more: [
+    { name: "Vue.js 3", iconComponent: "SiVuedotjs" },
     { name: "Cypress.io", iconComponent: "SiCypress" },
     { name: "Git", iconComponent: "DiGit" },
     { name: "GitHub", iconComponent: "BsGithub" },

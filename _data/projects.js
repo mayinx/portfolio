@@ -31,12 +31,27 @@ export const projects = {
   },
   more: [
     {
+      name: "The Yedi's Guide To The Galaxy",
+      subhead: "Vue.js-app with SWAPI-Backend",
+      imgUrl: "assets/jedis-galaxy-guide.vercel.app.png",
+      description:
+        "... The Jedi`s Guide to the Galaxy - a Star Wars fan page made by a Trekkie. A Vue.js-Project that integrates with the Star Wars API (SWAPI for the initiated) - allowing aspiring Jedis to safely navigate the vastness of the Galaxy - 'to boldly go, where no man has gone before...' - oops - that's the wrong franchise, but we're all buddies here ;-)",
+      techStack: {
+        Languages: ["JavaScript", "HTML5", "CSS3"],
+        "Web Stack": ["Vue 3 "],
+        "CSS-Framework": ["Bootstrap 5"],
+        More: ["localStorage", "Vercel"],
+      },
+      provider: "Vercel",
+      siteUrl: "https://jedis-galaxy-guide.vercel.app/",
+      repoUrl: "https://github.com/mayinx/jedis-galaxy-guide",
+    },
+    {
       name: "Bello",
       subhead: "Minimalistic Kanban-style Todo-App",
       imgUrl: "assets/todoapp-react-three.vercel.app1.png",
       description:
         "... aka the 'Getting-Stuff-Done-App Trello is afraid of' ;-) - a weekend-project created for the neuefische-Bootcamp. Really a fun one... Notable features include 'dynamic search across multiple task lists', 'list-specific task limits' & 'task completion points', which can be earned by performing as a good working bee - or lost if tasks are reopened...",
-      // "... aka the 'Getting-Stuff-Done-App Trello is afraid of' ;-) - a weekend-project created for the neuefische-Bootcamp. Really a fun one -  unfortunately one weekend wasn't enough to implement other features like multipe boards, drag 'n drop, responsiveness, and, what, not, etc.  .",
       // features: [
       //   "Tasks-CRUD",
       //   "Task priorities",
@@ -55,7 +70,7 @@ export const projects = {
     },
     {
       name: "Rick 'n Morty on Steroids",
-      subhead: "Integrating with an API Backend ",
+      subhead: "Integrating with an API Backend",
       imgUrl: "assets/rick-n-morty-on-steroids.vercel.app-8.png",
       description:
         "Another fun weekend project for the neuefische-Bootcamp. And my first attempt to set something up like a 'Default React App Folder Structure' (work in progress). Notable features include: Pulling characters from the Rick'N Morty-API, dynamic list filtering (per status, species, character name), snappy filter & search bar, pagination via a load more button to extend the current list, and not to forget: An incredibly (voluntarily) overdone scale effect on hover over the character cards, to 'increase the horror' - muahahaha... Takeaways: I learned that React-driven web development is blazing fast - and that a search for characters named 'Chris' or similar produced ...interesting results!",

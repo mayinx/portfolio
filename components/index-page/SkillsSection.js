@@ -11,7 +11,6 @@ import ListGroup from "react-bootstrap/ListGroup";
 
 import {
   SiHeroku,
-  SiVercel,
   SiVisualstudio,
   SiSublimetext,
   SiUbuntu,
@@ -28,7 +27,9 @@ import {
   SiAmazonaws,
   SiCplusplus,
   SiSocketdotio,
+  SiVercel,
   SiCypress,
+  SiVuedotjs,
 } from "react-icons/si";
 
 import { AiFillSlackCircle } from "react-icons/ai";
@@ -97,6 +98,7 @@ const SkillIconComponents = {
   SiCplusplus: SiCplusplus,
   SiSocketdotio: SiSocketdotio,
   SiCypress: SiCypress,
+  SiVuedotjs: SiVuedotjs,
   VscTerminalBash: VscTerminalBash,
   VscWorkspaceUnknown: VscWorkspaceUnknown,
 };

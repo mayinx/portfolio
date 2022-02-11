@@ -387,6 +387,9 @@ export default function SkillsSection({ sectionBaseStyle, skills }) {
                         Jamstack
                       </Badge>
                       <Badge className="medium-plus" bg="secondary">
+                        Vue.js
+                      </Badge>
+                      <Badge className="medium-plus" bg="secondary">
                         Bootstrap
                       </Badge>
                       <Badge className="medium-plus" bg="secondary">

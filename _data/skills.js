@@ -80,7 +80,7 @@ export const skills = {
     { name: "AWS (S3)", iconComponent: "SiAmazonaws" },
   ],
 
-  // // Team Communication & Collaboration
+  // Team Communication & Collaboration
   team: [
     { name: "Slack", iconComponent: "AiFillSlackCircle" },
     { name: "Github", iconComponent: "BsGithub" },
@@ -88,7 +88,7 @@ export const skills = {
     { name: "Trello", iconComponent: "SiTrello" },
   ],
 
-  // // Editors & Code Quality Extensions
+  // Editors & Code Quality Extensions
   ide: [
     { name: "VS Code", iconComponent: "SiVisualstudio" },
     { name: "Sublime Text", iconComponent: "SiSublimetext" },
@@ -99,7 +99,7 @@ export const skills = {
   ],
 
   more: [
-    { name: "Vue.js 3", iconComponent: "SiVuedotjs" },
+    { name: "Vue.js", iconComponent: "SiVuedotjs" },
     { name: "Cypress.io", iconComponent: "SiCypress" },
     { name: "Git", iconComponent: "DiGit" },
     { name: "GitHub", iconComponent: "BsGithub" },

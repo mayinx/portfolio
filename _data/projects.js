@@ -86,28 +86,7 @@ export const projects = {
       siteUrl: "https://todoapp-react-three.vercel.app/",
       repoUrl: "https://github.com/mayinx/bello",
     },
-    {
-      name: "Bello",
-      subhead: "Minimalistic Kanban-style Todo-App",
-      imgUrl: "assets/todoapp-react-three.vercel.app1.png",
-      description:
-        "... aka the 'Getting-Stuff-Done-App Trello is afraid of' ;-) - a weekend-project created for the neuefische-Bootcamp. Really a fun one... Notable features include 'dynamic search across multiple task lists', 'list-specific task limits' & 'task completion points', which can be earned by performing as a good working bee - or lost if tasks are reopened...",
-      // features: [
-      //   "Tasks-CRUD",
-      //   "Task priorities",
-      //   "Task status lifecycle (backlog, active, completed, archived",
-      //   "Task sorted by priorities"
-      // ],
-      techStack: {
-        Languages: ["JavaScript", "HTML5", "CSS3"],
-        "Web Stack": ["React", "Create React App"],
-        "CSS-Framework": ["None / 'Handcrafted'"],
-        More: ["localStorage", "react-toastify", "react-select", "react-toastify", "Vercel"],
-      },
-      provider: "Vercel",
-      siteUrl: "https://todoapp-react-three.vercel.app/",
-      repoUrl: "https://github.com/mayinx/bello",
-    },
+
     {
       name: "Rick 'n Morty on Steroids",
       subhead: "Integrating with an API Backend",

@@ -40,7 +40,7 @@ export const projects = {
         Languages: ["JavaScript", "HTML5", "CSS3"],
         "Web Stack": ["Vue 3 "],
         "CSS-Framework": ["Bootstrap 5"],
-        More: ["localStorage", "Vercel"],
+        More: ["SWAPI", "localStorage", "Vercel"],
       },
       provider: "Vercel",
       siteUrl: "https://jedis-galaxy-guide.vercel.app/",
@@ -51,7 +51,9 @@ export const projects = {
       subhead: "React-Dashboard showing the latest COVID-19 stats",
       imgUrl: "assets/covid-dashboard/covid-dashboard-three.vercel.app-01.png",
       description:
-        "A React-made dashboard showing the current COVID-19 world and country stats pulled from the COVID-19-API (which in turn pulls the data from Johns Hopkins CSSE)... Notable Features include: Dashboard tiles for Germany- and World-stats at the top and a list with stats for all 194 countries underneath. The list shows the first 10 of 194 countries and supports infinite scroll as pagination solution once a certain scroll threshold is reached (10 more countries per page / scroll). The countries-stats-list is filterable via a search box and keeps the last enterded query when the user browses the list via infinite scroll. The (yet to be styled) footer holds a button to refresh all stats. Rough Roadmap for future features (apart from a improved styling): Comparision options (perhaps to be located in the dashboard's footer) to load 'comparison data' (e.g. COVID stats from a week ago) that's visualized in every data card alongside the current COVID data (ups/downs in % or similar & marked red/green accordingly) - aaand: Tabs would be nice as well to switch between Johns Hopkins and RKI-stats which differ 'quite a bit' from the data Johns Hopkins CSSE comes up with...",
+        "A React-made dashboard showing the current COVID-19 world and country stats pulled from the COVID-19-API (which in turn pulls the data from the Johns Hopkins Center for Systems Science and Engineering, CSSE for short)...",
+      features: "Notable Features include: Dashboard tiles for Germany- and World-stats at the top and a list with stats for all 194 countries underneath. The list shows the first 10 of 194 countries and supports infinite scroll as pagination solution once a certain scroll threshold is reached (10 more countries per page / scroll). The countries-stats-list is filterable via a search box and keeps the last enterded query when the user browses the list via infinite scroll. The (yet to be styled) footer holds a button to refresh all stats.",
+      roadmap: "Rough Roadmap for future features (apart from a improved styling): Comparision options (perhaps to be located in the dashboard's footer) to load 'comparison data' (e.g. COVID stats from a week ago) that's visualized in every data card alongside the current COVID data (ups/downs in % or similar & marked red/green accordingly); a dashboard auto-refresh feature, that updates the data every 15 minutes or so; aaand: Tabs would be nice as well to switch between Johns Hopkins and RKI-stats which differ 'quite a bit' from the data Johns Hopkins CSSE comes up with...",
       techStack: {
         Languages: ["JavaScript", "HTML5", "CSS3"],
         "Web Stack": ["React", "Create React App"],

@@ -11,7 +11,7 @@ import { BsGithub } from "react-icons/bs";
 import { SiHeroku, SiVercel } from "react-icons/si";
 
 export default function ProjectCard(props) {
-  const { name, subhead, description, motivation, techStack, imgUrl, provider, siteUrl, repoUrl } =
+  const { name, subhead, description, motivation, features, roadmap, techStack, imgUrl, provider, siteUrl, repoUrl } =
     props;
 
   const providerIco =
@@ -34,6 +34,18 @@ export default function ProjectCard(props) {
               <>
                 <h5>Motivation</h5>
                 <Card.Text className="text-muted mb-4">{motivation}</Card.Text>
+              </>
+            )}
+            {features && (
+              <>
+                <h5>Features</h5>
+                <Card.Text className="text-muted mb-4">{features}</Card.Text>
+              </>
+            )}
+            {roadmap && (
+              <>
+                <h5>Roadmap</h5>
+                <Card.Text className="text-muted mb-4">{roadmap}</Card.Text>
               </>
             )}
             <h5>Tech Stack</h5>

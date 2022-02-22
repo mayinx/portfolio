@@ -47,6 +47,44 @@ export const projects = {
       repoUrl: "https://github.com/mayinx/jedis-galaxy-guide",
     },
     {
+      name: "COVID-19 DASHBOARD",
+      subhead: "React-Dashboard showing the latest COVID-19 stats",
+      imgUrl: "assets/covid-dashboard/covid-dashboard-three.vercel.app-01.png",
+      description:
+        "A React-made dashboard showing the current COVID-19 world and country stats pulled from the COVID-19-API (which in turn pulls the data from Johns Hopkins CSSE)... Notable Features include: Dashboard tiles for Germany- and World-stats at the top and a list with stats for all 194 countries underneath. The list shows the first 10 of 194 countries and supports infinite scroll as pagination solution once a certain scroll threshold is reached (10 more countries per page / scroll). The countries-stats-list is filterable via a search box and keeps the last enterded query when the user browses the list via infinite scroll. The (yet to be styled) footer holds a button to refresh all stats. Rough Roadmap for future features (apart from a improved styling): Comparision options (perhaps to be located in the dashboard's footer) to load 'comparison data' (e.g. COVID stats from a week ago) that's visualized in every data card alongside the current COVID data (ups/downs in % or similar & marked red/green accordingly) - aaand: Tabs would be nice as well to switch between Johns Hopkins and RKI-stats which differ 'quite a bit' from the data Johns Hopkins CSSE comes up with...",
+      techStack: {
+        Languages: ["JavaScript", "HTML5", "CSS3"],
+        "Web Stack": ["React", "Create React App"],
+        "CSS-Framework": ["None / 'Handcrafted'"],
+        More: ["covid19api", "react-icons", "Vercel"],
+      },
+      provider: "Vercel",
+      siteUrl: "https://covid-dashboard-three.vercel.app/",
+      repoUrl: "https://github.com/mayinx/covid-dashboard",
+    },
+    {
+      name: "Bello",
+      subhead: "Minimalistic Kanban-style Todo-App",
+      imgUrl: "assets/todoapp-react-three.vercel.app1.png",
+      description:
+        "... aka the 'Getting-Stuff-Done-App Trello is afraid of' ;-) - a weekend-project created for the neuefische-Bootcamp. Really a fun one... Notable features include 'dynamic search across multiple task lists', 'list-specific task limits' & 'task completion points', which can be earned by performing as a good working bee - or lost if tasks are reopened...",
+      // features: [
+      //   "Tasks-CRUD",
+      //   "Task priorities",
+      //   "Task status lifecycle (backlog, active, completed, archived",
+      //   "Task sorted by priorities"
+      // ],
+      techStack: {
+        Languages: ["JavaScript", "HTML5", "CSS3"],
+        "Web Stack": ["React", "Create React App"],
+        "CSS-Framework": ["None / 'Handcrafted'"],
+        More: ["localStorage", "react-toastify", "react-select", "react-toastify", "Vercel"],
+      },
+      provider: "Vercel",
+      siteUrl: "https://todoapp-react-three.vercel.app/",
+      repoUrl: "https://github.com/mayinx/bello",
+    },
+    {
       name: "Bello",
       subhead: "Minimalistic Kanban-style Todo-App",
       imgUrl: "assets/todoapp-react-three.vercel.app1.png",

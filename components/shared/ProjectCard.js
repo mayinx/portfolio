@@ -51,24 +51,22 @@ export default function ProjectCard(props) {
             <h5>Tech Stack</h5>
             <Card.Text>
               <ListGroup as="ul">
-                {Object.entries(techStack).map(([category, badges], idx) => {
+                {Object.entries(techStack).map(([category, badges]) => {
                   return (
                     <ListGroup.Item
                       as="li"
-                      key={idx}
+                      key={category}
                       className="row d-flex justify-content-between align-items-center"
                     >
                       <div className="col-12 col-sm-3 col-lg-6">
                         <h6 className="mb-1 mb-sm-0 text-black-50">{category}</h6>
                       </div>
                       <div className="col-12 col-sm-9 col-lg-6 d-flex flex-row flex-wrap gap-1 gap-sm-1 justify-content-end">
-                        {badges.map((badge, iindex) => {
+                        {badges.map((badge) => {
                           return (
-                            <>
-                              <Badge key={iindex} className="small" bg="secondary">
-                                {badge}
-                              </Badge>
-                            </>
+                            <Badge key={badge} className="small" bg="secondary">
+                              {badge}
+                            </Badge>
                           );
                         })}
                       </div>

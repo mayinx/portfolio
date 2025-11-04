@@ -16,8 +16,15 @@ export default function Header() {
           <div className="text-white">
             <h1 className="mb-3">Chris here.</h1>
             <h4 className="mb-3">Full Stack Web Developer from Cologne</h4>
-            <p> - passionate about technology | currently working on Edmeda -</p>
-            <a className="btn btn-outline-light btn-lg" href="#featured" role="button">
+            <p>
+              {" "}
+              - passionate about technology | currently working on Edmeda -
+            </p>
+            <a
+              className="btn btn-outline-light btn-lg"
+              href="#featured"
+              role="button"
+            >
               More
             </a>
           </div>

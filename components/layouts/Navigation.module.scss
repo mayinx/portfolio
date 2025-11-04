@@ -1,3 +1,5 @@
+@use "sass:color";
+
 // scss-docs-start navbar-theme-variables
 $white: #fff !default;
 $navbar-color: rgba($white, 0.55) !default;
@@ -22,7 +24,9 @@ $navbar-brand-hover-color: $navbar-active-color !default;
 .navbar:hover :global(.navbar-nav) :global(.active) {
   color: $navbar-navlink-hover-color !important;
   background-color: $navbar-navlink-hover-bg-color !important;
-  border: 1px solid darken($navbar-navlink-hover-bg-color, 5%) !important;
+  // border: 1px solid darken($navbar-navlink-hover-bg-color, 5%) !important;
+  border: 1px solid
+    color.adjust($navbar-navlink-hover-bg-color, $lightness: -5%) !important;
 }
 
 .navbar {
@@ -63,7 +67,9 @@ $navbar-brand-hover-color: $navbar-active-color !default;
       &:focus {
         color: $navbar-navlink-hover-color;
         background-color: $navbar-navlink-hover-bg-color;
-        border: 1px solid darken($navbar-navlink-hover-bg-color, 5%);
+        // border: 1px solid darken($navbar-navlink-hover-bg-color, 5%);
+        border: 1px solid
+          color.adjust($navbar-navlink-hover-bg-color, $lightness: -5%) !important;
       }
 
       &.disabled {

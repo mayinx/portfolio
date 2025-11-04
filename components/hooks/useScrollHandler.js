@@ -14,20 +14,19 @@ import { useState, useEffect } from "react";
 /* TODO: Handle Case: "user performs page reload" */
 export const useScrollHandler = (
   scrollYOffsetLimit,
-  scrollPropery = "scrollY",
-  scrollCntEl = null
+  scrollProperty = "scrollY",
+  scrollCntEl = null,
 ) => {
-  // setting initial value to true
   const [scroll, setScroll] = useState(false);
 
   const scrollCnt = scrollCntEl || window;
-  const useScrollY = scrollPropery === "scrollY";
+  const useScrollY = scrollProperty === "scrollY";
 
   // on mount
   useEffect(() => {
     const onScroll = () => {
       console.log("1");
-      const scrollCheck = scrollCnt[scrollPropery] > scrollYOffsetLimit;
+      const scrollCheck = scrollCnt[scrollProperty] > scrollYOffsetLimit;
       if (scrollCheck !== scroll) {
         console.log("2");
         setScroll(scrollCheck);
@@ -41,7 +40,7 @@ export const useScrollHandler = (
     return () => {
       scrollCnt.removeEventListener("scroll", onScroll);
     };
-  }, [scroll, setScroll]);
+  }, [scroll, setScroll, scrollCnt, scrollProperty, scrollYOffsetLimit]);
 
   return scroll;
 };

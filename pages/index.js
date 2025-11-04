@@ -32,7 +32,10 @@ export function getStaticProps() {
 export default function Index({ projects, skills }) {
   return (
     <IndexLayout pageName="Start">
-      <section id="featured" className={styles.section + " " + styles.currentSection}>
+      <section
+        id="featured"
+        className={styles.section + " " + styles.currentSection}
+      >
         <Container>
           <Row>
             <Col className="text-center">
@@ -73,7 +76,10 @@ export default function Index({ projects, skills }) {
       </section>
 
       {/*    About  */}
-      <section id="about" className={styles.section + " " + styles.aboutSection}>
+      <section
+        id="about"
+        className={styles.section + " " + styles.aboutSection}
+      >
         <Container>
           <Row>
             <Col className="text-center">
@@ -89,14 +95,20 @@ export default function Index({ projects, skills }) {
               lg={4}
               className="p-lg-4 mt-lg-0 d-flex justify-content-center align-items-center"
             >
-              <div style={{ width: "250px", height: "250px", position: "relative" }}>
+              <div
+                style={{
+                  width: "250px",
+                  height: "250px",
+                  position: "relative",
+                }}
+              >
                 <Image
                   className={`${styles.aboutProfileImage} rounded-full`}
                   src="/assets/profile-pic-spaced3-500x500.png"
                   width={250}
                   height={250}
                   alt="profile image"
-                  layout="fixed"
+                  priority
                 ></Image>
               </div>
             </Col>
@@ -111,13 +123,13 @@ export default function Index({ projects, skills }) {
                 style={{ color: "#d2d2d2 !important" }}
                 className="mb-3 text-center text-lg-start"
               >
-                Full Stack Web Developer from Cologne
+                Full Stack Web Developer from Cologne – expanding into QA Automation & DevOps
               </h4>
               <ul className={`${styles.aboutTldrList} lead fw-500 text-light`}>
-                <li>Passionate about MERN- & Jamstack development.</li>
+                <li>Passionate about crafting seamless web experiences — and testing them just as thoroughly.</li>
+                <li>Experienced with modern web stacks like MERN, Jamstack & Vue.js — and always exploring where Dev meets QA.</li>
                 <li>
-                  Currently working on Edmeda, a multi-community app for schools with realtime group
-                  chats.
+                  Currently developing projects that bridge my web development background with QA automation, testing frameworks, CI/CD pipelines and modern DevOps workflows.
                 </li>
                 <li>Background in Media Science & IT-Projectmanagement.</li>
               </ul>
@@ -127,29 +139,41 @@ export default function Index({ projects, skills }) {
             <Col xs={12} lg={8}>
               <h3 className="text-light">Hi there.</h3>
               <p className="lead fw-normal text-light">
-                I&apos;m a passionate full-stack Web Developer with a background in Media Science,
-                IT-Projectmanagment & Online-Marketing. My strengths lie within the development of
-                MERN- & Jamstack web applications. During my studies I used to work with Ruby on
-                Rails, both for university projects and as a freelancer. I live in Cologne where I
-                graduated in Media Science with focus on Computer Science.
+                I&apos;m a passionate Full Stack Web Developer with a background
+                in Media Science, IT-Projectmanagment & Online-Marketing. 
+                Over the past few years, I’ve built modern web applications with stacks 
+                like MERN, Jamstack and Vue.js — focusing on usability, maintainability 
+                and clean architecture. During my studies I used to work with Ruby on Rails, both for 
+                university projects and as a freelancer. I live
+                in Cologne where I graduated in Media Science with focus on
+                Computer Science.
               </p>
               <p className="lead fw-normal text-light">
-                Currently I&apos;m utilizing the MERN-Stack to work on{" "}
-                <a href="#featured" className="link-info text-decoration-underline">
-                  Edmeda
-                </a>
-                , aiming to develop a web based solution that enables schools to implicitly teach
-                important digital literacies through active practice of digital mediated social
-                communication & collaboration in community group chats.
-              </p>
+                Recently, my work has evolved toward QA Automation and DevOps, where 
+                I apply the same precision and curiosity that drive my development projects.                
+                Currently I&apos;m building test-driven workflows and CI/CD pipelines to bridge 
+                code quality and continuous delivery — a natural extension of my experience 
+                as a developer.
+              </p>             
+              <p className="lead fw-normal text-light">
+                Previously, I worked in a hybrid front-end and QA role, combining modern web development 
+                with automated testing, code quality tooling, and review workflows. My focus was on
+                Cypress-based end-to-end testing, 
+                maintaining test coverage across complex e-commerce flows, and collaborating with DevOps 
+                and backend teams on deployment stability and CI workflows. That experience sparked 
+                my deeper interest in QA automation and DevOps practices — and laid the foundation 
+                for my current direction.
+              </p>              
             </Col>
             <Col xs={12} lg={4}>
               <h3 className="text-light">Let&apos;s connect.</h3>
               <p className="lead fw-normal text-light mb-5 mb-lg-4">
-                You can find me on GitHub, LinkedIn and Xing. Feel free to drop me an e-mail -
-                I&apos;ll be happy to get back to you ASAP...
+                You can find me on GitHub, LinkedIn and Xing. Feel free to drop
+                me an e-mail - I&apos;ll be happy to get back to you ASAP...
               </p>
-              <div className={`${styles.aboutContactOptions} lead fw-normal text-light pt-lg-1`}>
+              <div
+                className={`${styles.aboutContactOptions} lead fw-normal text-light pt-lg-1`}
+              >
                 <Button
                   target="_blank"
                   size="sm"
@@ -175,7 +199,7 @@ export default function Index({ projects, skills }) {
                   size="sm"
                   className="rounded-3 shadow"
                   variant="light"
-                  href="ttps://www.xing.com/profile/Christian_Daum33/"
+                  href="https://www.xing.com/profile/Christian_Daum33/"
                 >
                   <FaXingSquare size="2rem" />
                   <span className="text-nowrap ps-2">Xing</span>

@@ -68,8 +68,8 @@ export default function ProjectCard(props) {
               </>
             )}
             <h5>Tech Stack</h5>
-            <Card.Text>
-              <ListGroup as="ul">
+            <Card.Text as="div">
+              <ListGroup>
                 {Object.entries(techStack).map(([category, badges]) => {
                   return (
                     <ListGroup.Item

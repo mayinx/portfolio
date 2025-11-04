@@ -12,7 +12,7 @@ export default function Footer() {
     <div className="container">
       <footer className="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 gap-3 border-top">
         <div className="col-12 col-md-5 d-flex justify-content-center justify-content-md-start align-items-center">
-          <span className="text-muted">&copy; 2022 Christian Daum</span>
+          <span className="text-muted">&copy; 2025 Christian Daum</span>
         </div>
 
         <ul className="nav col-12 col-md-5 justify-content-center justify-content-md-end list-unstyled d-flex">

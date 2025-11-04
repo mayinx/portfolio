@@ -108,7 +108,7 @@ export default function Index({ projects, skills }) {
                   width={250}
                   height={250}
                   alt="profile image"
-                  layout="fixed"
+                  priority
                 ></Image>
               </div>
             </Col>

@@ -1,4 +1,9 @@
-import { BsGithub, BsLinkedin, BsStackOverflow, BsEnvelopeFill } from "react-icons/bs";
+import {
+  BsGithub,
+  BsLinkedin,
+  BsStackOverflow,
+  BsEnvelopeFill,
+} from "react-icons/bs";
 import { FaXingSquare } from "react-icons/fa";
 import Obfuscate from "react-obfuscate";
 
@@ -17,12 +22,18 @@ export default function Footer() {
             </a>
           </li>
           <li className="ms-3">
-            <a className="text-muted" href="https://www.linkedin.com/in/christian-daum-4397a021a/">
+            <a
+              className="text-muted"
+              href="https://www.linkedin.com/in/christian-daum-4397a021a/"
+            >
               <BsLinkedin size="2rem" />
             </a>
           </li>
           <li className="ms-3">
-            <a className="text-muted" href="https://www.xing.com/profile/Christian_Daum33/">
+            <a
+              className="text-muted"
+              href="https://www.xing.com/profile/Christian_Daum33/"
+            >
               <FaXingSquare size="2rem" />
             </a>
           </li>
@@ -40,7 +51,10 @@ export default function Footer() {
             </Obfuscate>
           </li>
           <li className="ms-3">
-            <a className="text-muted" href="https://stackoverflow.com/users/664333/mayinx">
+            <a
+              className="text-muted"
+              href="https://stackoverflow.com/users/664333/mayinx"
+            >
               <BsStackOverflow size="2rem" />
             </a>
           </li>

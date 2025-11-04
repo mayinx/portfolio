@@ -19,10 +19,17 @@ export default function Navigation() {
   // const scroll = useScrollHandler(50, "scrollTop");
   const scroll = false;
   // }
-  const navbarClass = !scroll ? `${styles.navbar}` : `${styles.navbar} ${styles.navbarSticky}`;
+  const navbarClass = !scroll
+    ? `${styles.navbar}`
+    : `${styles.navbar} ${styles.navbarSticky}`;
 
   return (
-    <Navbar collapseOnSelect className={`${navbarClass} shadow-lg`} expand="lg" variant="dark">
+    <Navbar
+      collapseOnSelect
+      className={`${navbarClass} shadow-lg`}
+      expand="lg"
+      variant="dark"
+    >
       <Container fluid className="flex-wrap">
         {/* <Navbar.Brand href="/">Christian Daum | Full Stack Developer</Navbar.Brand> */}
         <Navbar.Brand
@@ -31,10 +38,17 @@ export default function Navigation() {
         >
           <span className={styles.navBrandHead}>Christian Daum</span>
           <span className="d-none d-sm-block text-white-50"> | </span>
-          <span className={`${styles.navBrandSubhead} text-white-50`}>Full Stack Developer</span>
+          <span className={`${styles.navBrandSubhead} text-white-50`}>
+            Full Stack Developer
+          </span>
         </Navbar.Brand>
-        <Navbar.Toggle className={styles.navbarToggler} aria-controls="basic-navbar-nav">
-          <span className={`${styles.navbarTogglerIcon} navbar-toggler-icon`}></span>
+        <Navbar.Toggle
+          className={styles.navbarToggler}
+          aria-controls="basic-navbar-nav"
+        >
+          <span
+            className={`${styles.navbarTogglerIcon} navbar-toggler-icon`}
+          ></span>
           {/* <BiMenu className={`${styles.navbarTogglerIcon} navbar-toggler-icon`} /> */}
         </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">

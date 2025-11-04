@@ -3,8 +3,6 @@
   color: white;
 }
 
-
-
 .skillsSection .sectionSubhead {
   color: #d2d2d2 !important;
 }
@@ -12,7 +10,6 @@
 .skillsSection .sectionHead {
   color: white !important;
 }
-
 
 .aboutTldrList {
   padding-left: 0;
@@ -30,8 +27,6 @@
     list-style-position: outside;
   }
 }
-
-
 
 .skillTiles {
   display: grid;

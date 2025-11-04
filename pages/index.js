@@ -32,7 +32,10 @@ export function getStaticProps() {
 export default function Index({ projects, skills }) {
   return (
     <IndexLayout pageName="Start">
-      <section id="featured" className={styles.section + " " + styles.currentSection}>
+      <section
+        id="featured"
+        className={styles.section + " " + styles.currentSection}
+      >
         <Container>
           <Row>
             <Col className="text-center">
@@ -73,7 +76,10 @@ export default function Index({ projects, skills }) {
       </section>
 
       {/*    About  */}
-      <section id="about" className={styles.section + " " + styles.aboutSection}>
+      <section
+        id="about"
+        className={styles.section + " " + styles.aboutSection}
+      >
         <Container>
           <Row>
             <Col className="text-center">
@@ -89,7 +95,13 @@ export default function Index({ projects, skills }) {
               lg={4}
               className="p-lg-4 mt-lg-0 d-flex justify-content-center align-items-center"
             >
-              <div style={{ width: "250px", height: "250px", position: "relative" }}>
+              <div
+                style={{
+                  width: "250px",
+                  height: "250px",
+                  position: "relative",
+                }}
+              >
                 <Image
                   className={`${styles.aboutProfileImage} rounded-full`}
                   src="/assets/profile-pic-spaced3-500x500.png"
@@ -116,8 +128,8 @@ export default function Index({ projects, skills }) {
               <ul className={`${styles.aboutTldrList} lead fw-500 text-light`}>
                 <li>Passionate about MERN- & Jamstack development.</li>
                 <li>
-                  Currently working on Edmeda, a multi-community app for schools with realtime group
-                  chats.
+                  Currently working on Edmeda, a multi-community app for schools
+                  with realtime group chats.
                 </li>
                 <li>Background in Media Science & IT-Projectmanagement.</li>
               </ul>
@@ -127,29 +139,37 @@ export default function Index({ projects, skills }) {
             <Col xs={12} lg={8}>
               <h3 className="text-light">Hi there.</h3>
               <p className="lead fw-normal text-light">
-                I&apos;m a passionate full-stack Web Developer with a background in Media Science,
-                IT-Projectmanagment & Online-Marketing. My strengths lie within the development of
-                MERN- & Jamstack web applications. During my studies I used to work with Ruby on
-                Rails, both for university projects and as a freelancer. I live in Cologne where I
-                graduated in Media Science with focus on Computer Science.
+                I&apos;m a passionate full-stack Web Developer with a background
+                in Media Science, IT-Projectmanagment & Online-Marketing. My
+                strengths lie within the development of MERN- & Jamstack web
+                applications. During my studies I used to work with Ruby on
+                Rails, both for university projects and as a freelancer. I live
+                in Cologne where I graduated in Media Science with focus on
+                Computer Science.
               </p>
               <p className="lead fw-normal text-light">
                 Currently I&apos;m utilizing the MERN-Stack to work on{" "}
-                <a href="#featured" className="link-info text-decoration-underline">
+                <a
+                  href="#featured"
+                  className="link-info text-decoration-underline"
+                >
                   Edmeda
                 </a>
-                , aiming to develop a web based solution that enables schools to implicitly teach
-                important digital literacies through active practice of digital mediated social
-                communication & collaboration in community group chats.
+                , aiming to develop a web based solution that enables schools to
+                implicitly teach important digital literacies through active
+                practice of digital mediated social communication &
+                collaboration in community group chats.
               </p>
             </Col>
             <Col xs={12} lg={4}>
               <h3 className="text-light">Let&apos;s connect.</h3>
               <p className="lead fw-normal text-light mb-5 mb-lg-4">
-                You can find me on GitHub, LinkedIn and Xing. Feel free to drop me an e-mail -
-                I&apos;ll be happy to get back to you ASAP...
+                You can find me on GitHub, LinkedIn and Xing. Feel free to drop
+                me an e-mail - I&apos;ll be happy to get back to you ASAP...
               </p>
-              <div className={`${styles.aboutContactOptions} lead fw-normal text-light pt-lg-1`}>
+              <div
+                className={`${styles.aboutContactOptions} lead fw-normal text-light pt-lg-1`}
+              >
                 <Button
                   target="_blank"
                   size="sm"

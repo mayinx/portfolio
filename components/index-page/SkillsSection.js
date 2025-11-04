@@ -105,7 +105,10 @@ const SkillIconComponents = {
 
 export default function SkillsSection({ sectionBaseStyle, skills }) {
   return (
-    <section id="skills" className={sectionBaseStyle + " " + styles.skillsSection}>
+    <section
+      id="skills"
+      className={sectionBaseStyle + " " + styles.skillsSection}
+    >
       <Container>
         {/*  Skills Header*/}
         <Row>
@@ -130,11 +133,15 @@ export default function SkillsSection({ sectionBaseStyle, skills }) {
                   <Col className={styles.skill} key={idx}>
                     <div className={styles.skill__logo}>
                       {/* <DiCss3 /> */}
-                      {typeof SkillIconComponents[skill.iconComponent] !== "undefined" &&
-                        React.createElement(SkillIconComponents[skill.iconComponent], {
-                          color: "#fff",
-                          size: "3rem",
-                        })}
+                      {typeof SkillIconComponents[skill.iconComponent] !==
+                        "undefined" &&
+                        React.createElement(
+                          SkillIconComponents[skill.iconComponent],
+                          {
+                            color: "#fff",
+                            size: "3rem",
+                          },
+                        )}
                     </div>
                     <div className={styles.skill__name}>{skill.name}</div>
                   </Col>
@@ -155,11 +162,15 @@ export default function SkillsSection({ sectionBaseStyle, skills }) {
                   <Col className={styles.skill} key={idx}>
                     <div className={styles.skill__logo}>
                       {/* <DiCss3 /> */}
-                      {typeof SkillIconComponents[skill.iconComponent] !== "undefined" &&
-                        React.createElement(SkillIconComponents[skill.iconComponent], {
-                          color: "#fff",
-                          size: "3rem",
-                        })}
+                      {typeof SkillIconComponents[skill.iconComponent] !==
+                        "undefined" &&
+                        React.createElement(
+                          SkillIconComponents[skill.iconComponent],
+                          {
+                            color: "#fff",
+                            size: "3rem",
+                          },
+                        )}
                     </div>
                     <div className={styles.skill__name}>{skill.name}</div>
                   </Col>
@@ -182,11 +193,15 @@ export default function SkillsSection({ sectionBaseStyle, skills }) {
                   <Col className={styles.skill} key={idx}>
                     <div className={styles.skill__logo}>
                       {/* <DiCss3 /> */}
-                      {typeof SkillIconComponents[skill.iconComponent] !== "undefined" &&
-                        React.createElement(SkillIconComponents[skill.iconComponent], {
-                          color: "#fff",
-                          size: "3rem",
-                        })}
+                      {typeof SkillIconComponents[skill.iconComponent] !==
+                        "undefined" &&
+                        React.createElement(
+                          SkillIconComponents[skill.iconComponent],
+                          {
+                            color: "#fff",
+                            size: "3rem",
+                          },
+                        )}
                     </div>
                     <div className={styles.skill__name}>{skill.name}</div>
                   </Col>
@@ -206,11 +221,15 @@ export default function SkillsSection({ sectionBaseStyle, skills }) {
                   <Col className={styles.skill} key={idx}>
                     <div className={styles.skill__logo}>
                       {/* <DiCss3 /> */}
-                      {typeof SkillIconComponents[skill.iconComponent] !== "undefined" &&
-                        React.createElement(SkillIconComponents[skill.iconComponent], {
-                          color: "#fff",
-                          size: "3rem",
-                        })}
+                      {typeof SkillIconComponents[skill.iconComponent] !==
+                        "undefined" &&
+                        React.createElement(
+                          SkillIconComponents[skill.iconComponent],
+                          {
+                            color: "#fff",
+                            size: "3rem",
+                          },
+                        )}
                     </div>
                     <div className={styles.skill__name}>{skill.name}</div>
                   </Col>
@@ -224,7 +243,9 @@ export default function SkillsSection({ sectionBaseStyle, skills }) {
           <Col xs={12} lg={6} className="px-5">
             <Row className="gy-3 ">
               <div className="dividerWithCaption">
-                <span className="h5 fw-bold font-monospace">CSS-Frameworks & Tooling</span>
+                <span className="h5 fw-bold font-monospace">
+                  CSS-Frameworks & Tooling
+                </span>
               </div>
             </Row>
             <Row className={styles.skillTiles}>
@@ -233,11 +254,15 @@ export default function SkillsSection({ sectionBaseStyle, skills }) {
                   <Col className={styles.skill} key={idx}>
                     <div className={styles.skill__logo}>
                       {/* <DiCss3 /> */}
-                      {typeof SkillIconComponents[skill.iconComponent] !== "undefined" &&
-                        React.createElement(SkillIconComponents[skill.iconComponent], {
-                          color: "#fff",
-                          size: "3rem",
-                        })}
+                      {typeof SkillIconComponents[skill.iconComponent] !==
+                        "undefined" &&
+                        React.createElement(
+                          SkillIconComponents[skill.iconComponent],
+                          {
+                            color: "#fff",
+                            size: "3rem",
+                          },
+                        )}
                     </div>
                     <div className={styles.skill__name}>{skill.name}</div>
                   </Col>
@@ -256,11 +281,15 @@ export default function SkillsSection({ sectionBaseStyle, skills }) {
                 return (
                   <Col className={styles.skill} key={idx}>
                     <div className={styles.skill__logo}>
-                      {typeof SkillIconComponents[skill.iconComponent] !== "undefined" &&
-                        React.createElement(SkillIconComponents[skill.iconComponent], {
-                          color: "#fff",
-                          size: "3rem",
-                        })}
+                      {typeof SkillIconComponents[skill.iconComponent] !==
+                        "undefined" &&
+                        React.createElement(
+                          SkillIconComponents[skill.iconComponent],
+                          {
+                            color: "#fff",
+                            size: "3rem",
+                          },
+                        )}
                     </div>
                     <div className={styles.skill__name}>{skill.name}</div>
                   </Col>
@@ -275,7 +304,9 @@ export default function SkillsSection({ sectionBaseStyle, skills }) {
           <Col xs={12} lg={6} className="px-5">
             <Row className="gy-3 ">
               <div className="dividerWithCaption">
-                <span className="h5 fw-bold font-monospace">IDEs & CQ-Extensions</span>
+                <span className="h5 fw-bold font-monospace">
+                  IDEs & CQ-Extensions
+                </span>
               </div>
             </Row>
             <Row className={styles.skillTiles}>
@@ -283,11 +314,15 @@ export default function SkillsSection({ sectionBaseStyle, skills }) {
                 return (
                   <Col className={styles.skill} key={idx}>
                     <div className={styles.skill__logo}>
-                      {typeof SkillIconComponents[skill.iconComponent] !== "undefined" &&
-                        React.createElement(SkillIconComponents[skill.iconComponent], {
-                          color: "#fff",
-                          size: "3rem",
-                        })}
+                      {typeof SkillIconComponents[skill.iconComponent] !==
+                        "undefined" &&
+                        React.createElement(
+                          SkillIconComponents[skill.iconComponent],
+                          {
+                            color: "#fff",
+                            size: "3rem",
+                          },
+                        )}
                     </div>
                     <div className={styles.skill__name}>{skill.name}</div>
                   </Col>
@@ -298,7 +333,9 @@ export default function SkillsSection({ sectionBaseStyle, skills }) {
           <Col xs={12} lg={6} className="px-5">
             <Row className="gy-3 ">
               <div className="dividerWithCaption">
-                <span className="h5 fw-bold font-monospace">Team Collaboration</span>
+                <span className="h5 fw-bold font-monospace">
+                  Team Collaboration
+                </span>
               </div>
             </Row>
             <Row className={styles.skillTiles}>
@@ -306,11 +343,15 @@ export default function SkillsSection({ sectionBaseStyle, skills }) {
                 return (
                   <Col className={styles.skill} key={idx}>
                     <div className={styles.skill__logo}>
-                      {typeof SkillIconComponents[skill.iconComponent] !== "undefined" &&
-                        React.createElement(SkillIconComponents[skill.iconComponent], {
-                          color: "#fff",
-                          size: "3rem",
-                        })}
+                      {typeof SkillIconComponents[skill.iconComponent] !==
+                        "undefined" &&
+                        React.createElement(
+                          SkillIconComponents[skill.iconComponent],
+                          {
+                            color: "#fff",
+                            size: "3rem",
+                          },
+                        )}
                     </div>
                     <div className={styles.skill__name}>{skill.name}</div>
                   </Col>
@@ -325,7 +366,9 @@ export default function SkillsSection({ sectionBaseStyle, skills }) {
           <Col xs={12} className="px-5">
             <Row className="gy-3 ">
               <div className="dividerWithCaption">
-                <span className="h5 fw-bold font-monospace">theUnruly(...rest)</span>
+                <span className="h5 fw-bold font-monospace">
+                  theUnruly(...rest)
+                </span>
               </div>
             </Row>
             <Row className={styles.skillTiles}>
@@ -333,11 +376,15 @@ export default function SkillsSection({ sectionBaseStyle, skills }) {
                 return (
                   <Col className={styles.skill} key={idx}>
                     <div className={styles.skill__logo}>
-                      {typeof SkillIconComponents[skill.iconComponent] !== "undefined" &&
-                        React.createElement(SkillIconComponents[skill.iconComponent], {
-                          color: "#fff",
-                          size: "3rem",
-                        })}
+                      {typeof SkillIconComponents[skill.iconComponent] !==
+                        "undefined" &&
+                        React.createElement(
+                          SkillIconComponents[skill.iconComponent],
+                          {
+                            color: "#fff",
+                            size: "3rem",
+                          },
+                        )}
                     </div>
                     <div className={styles.skill__name}>{skill.name}</div>
                   </Col>

@@ -17,7 +17,11 @@ export const skills = {
   webStacks: {
     // TODO: On hover display something like: "MERN stack is a web development framework. It consists of MongoDB, ExpressJS, ReactJS, and NodeJS as its working components. ..."
     mern: [
-      { name: "JavaScript", iconComponent: "JavascriptPlain", description: null },
+      {
+        name: "JavaScript",
+        iconComponent: "JavascriptPlain",
+        description: null,
+      },
       {
         name: "MongoDB",
         iconComponent: "DiMongodb",

@@ -18,7 +18,7 @@ export default function Header() {
             <h4 className="mb-3">Full Stack Web Developer from Cologne</h4>
             <p>
               {" "}
-              - passionate about technology | currently working on Edmeda -
+              - passionate about web & quality engineering | bridging Dev and QA -
             </p>
             <a
               className="btn btn-outline-light btn-lg"

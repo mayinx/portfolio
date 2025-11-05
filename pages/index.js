@@ -149,21 +149,27 @@ export default function Index({ projects, skills }) {
                 Computer Science.
               </p>
               <p className="lead fw-normal text-light">
-                Recently, my work has evolved toward QA Automation and DevOps, where 
-                I apply the same precision and curiosity that drive my development projects.                
-                Currently I&apos;m building test-driven workflows and CI/CD pipelines to bridge 
-                code quality and continuous delivery — a natural extension of my experience 
-                as a developer.
+                In recent years, my work has evolved toward QA Automation and DevOps, 
+                where I apply the same precision and curiosity that drive my development projects. 
+                Currently I'm building test-driven workflows and CI/CD pipelines to bridge code quality 
+                and continuous delivery — a natural extension of my experience as a developer.
               </p>             
               <p className="lead fw-normal text-light">
                 Previously, I worked in a hybrid front-end and QA role, combining modern web development 
-                with automated testing, code quality tooling, and review workflows. My focus was on
-                Cypress-based end-to-end testing, 
-                maintaining test coverage across complex e-commerce flows, and collaborating with DevOps 
-                and backend teams on deployment stability and CI workflows. That experience sparked 
-                my deeper interest in QA automation and DevOps practices — and laid the foundation 
-                for my current direction.
-              </p>              
+                with automated testing, code quality tooling, and review workflows. 
+                My focus was on Cypress-based end-to-end testing, maintaining test coverage 
+                across complex e-commerce flows, and ensuring deployment stability through CI/CD integration. 
+              </p>         
+              <p className="lead fw-normal text-light">
+                I also contributed to QA documentation, onboarding guides, 
+                and internal coding standards — mentoring junior and external developers 
+                through code reviews and refactorings that improved testability and overall 
+                code quality.
+              </p>         
+              <p className="lead fw-normal text-light">
+                That experience sparked my deeper interest in QA automation 
+                and DevOps practices — and laid the foundation for my current direction.
+              </p>                            
             </Col>
             <Col xs={12} lg={4}>
               <h3 className="text-light">Let&apos;s connect.</h3>

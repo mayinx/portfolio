@@ -123,13 +123,22 @@ export default function Index({ projects, skills }) {
                 style={{ color: "#d2d2d2 !important" }}
                 className="mb-3 text-center text-lg-start"
               >
-                Full Stack Web Developer from Cologne – expanding into QA Automation & DevOps
+                Full Stack Web Developer from Cologne – expanding into QA
+                Automation & DevOps
               </h4>
               <ul className={`${styles.aboutTldrList} lead fw-500 text-light`}>
-                <li>Passionate about crafting seamless web experiences — and testing them just as thoroughly.</li>
-                <li>Experienced with modern web stacks like MERN, Jamstack & Vue.js — and always exploring where Dev meets QA.</li>
                 <li>
-                  Currently developing projects that bridge my web development background with QA automation, testing frameworks, CI/CD pipelines and modern DevOps workflows.
+                  Passionate about crafting seamless web experiences — and
+                  testing them just as thoroughly.
+                </li>
+                <li>
+                  Experienced with modern web stacks like MERN, Jamstack &
+                  Vue.js — and always exploring where Dev meets QA.
+                </li>
+                <li>
+                  Currently developing projects that bridge my web development
+                  background with QA automation, testing frameworks, CI/CD
+                  pipelines and modern DevOps workflows.
                 </li>
                 <li>Background in Media Science & IT-Projectmanagement.</li>
               </ul>
@@ -140,36 +149,41 @@ export default function Index({ projects, skills }) {
               <h3 className="text-light">Hi there.</h3>
               <p className="lead fw-normal text-light">
                 I&apos;m a passionate Full Stack Web Developer with a background
-                in Media Science, IT-Projectmanagment & Online-Marketing. 
-                Over the past few years, I’ve built modern web applications with stacks 
-                like MERN, Jamstack and Vue.js — focusing on usability, maintainability 
-                and clean architecture. During my studies I used to work with Ruby on Rails, both for 
-                university projects and as a freelancer. I live
-                in Cologne where I graduated in Media Science with focus on
-                Computer Science.
+                in Media Science, IT-Projectmanagment & Online-Marketing. Over
+                the past few years, I’ve built modern web applications with
+                stacks like MERN, Jamstack and Vue.js — focusing on usability,
+                maintainability and clean architecture. During my studies I used
+                to work with Ruby on Rails, both for university projects and as
+                a freelancer. I live in Cologne where I graduated in Media
+                Science with focus on Computer Science.
               </p>
               <p className="lead fw-normal text-light">
-                In recent years, my work has evolved toward QA Automation and DevOps, 
-                where I apply the same precision and curiosity that drive my development projects. 
-                Currently I'm building test-driven workflows and CI/CD pipelines to bridge code quality 
-                and continuous delivery — a natural extension of my experience as a developer.
-              </p>             
+                In recent years, my work has evolved toward QA Automation and
+                DevOps, where I apply the same precision and curiosity that
+                drive my development projects. Currently I&apos;m building
+                test-driven workflows and CI/CD pipelines to bridge code quality
+                and continuous delivery — a natural extension of my experience
+                as a developer.
+              </p>
               <p className="lead fw-normal text-light">
-                Previously, I worked in a hybrid front-end and QA role, combining modern web development 
-                with automated testing, code quality tooling, and review workflows. 
-                My focus was on Cypress-based end-to-end testing, maintaining test coverage 
-                across complex e-commerce flows, and ensuring deployment stability through CI/CD integration. 
-              </p>         
+                Previously, I worked in a hybrid front-end and QA role,
+                combining modern web development with automated testing, code
+                quality tooling, and review workflows. My focus was on
+                Cypress-based end-to-end testing, maintaining test coverage
+                across complex e-commerce flows, and ensuring deployment
+                stability through CI/CD integration.
+              </p>
               <p className="lead fw-normal text-light">
-                I also contributed to QA documentation, onboarding guides, 
-                and internal coding standards — mentoring junior and external developers 
-                through code reviews and refactorings that improved testability and overall 
-                code quality.
-              </p>         
+                I also contributed to QA documentation, onboarding guides, and
+                internal coding standards — mentoring junior and external
+                developers through code reviews and refactorings that improved
+                testability and overall code quality.
+              </p>
               <p className="lead fw-normal text-light">
-                That experience sparked my deeper interest in QA automation 
-                and DevOps practices — and laid the foundation for my current direction.
-              </p>                            
+                That experience sparked my deeper interest in QA automation and
+                DevOps practices — and laid the foundation for my current
+                direction.
+              </p>
             </Col>
             <Col xs={12} lg={4}>
               <h3 className="text-light">Let&apos;s connect.</h3>
